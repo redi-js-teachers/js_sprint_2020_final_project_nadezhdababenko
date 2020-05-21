@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700&subset=cyrillic");
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+$black: #302119;
+$dark-red: #430c05;
+$dark-blue: #00353f;
+$blue-green: #008f99; //logo
+$orange: #ff830c; //logo
+$yellow: #ffbf66;
+$grey: #ddd6cf;
+$white:#f4f2ef;
+
+body {
+    margin: 0;
+    font-family: "Fira Sans", sans-serif;
+    // font-family: 'Montserrat', sans-serif;
+    background-color: $white;
+    color: $black;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+

@@ -1,0 +1,11 @@
+.list {
+    &__header {
+        margin-bottom: 24px;
+    }
+    &__body > .book {
+        margin-right: 24px;
+    }
+    &__body > .book:last-child {
+        margin-right: 0;
+    }
+}
