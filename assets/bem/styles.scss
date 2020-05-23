@@ -1,9 +1,8 @@
+//main 
 @import "core";
-
-
-
-@import "blocks/spacer"; //margins
-
+//margins
+@import "blocks/spacer"; 
+//blocks
 @import "blocks/header/header";
 @import "blocks/header/main-navbar";
 @import "blocks/intro";

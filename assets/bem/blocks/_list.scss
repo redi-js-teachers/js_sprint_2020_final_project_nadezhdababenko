@@ -2,6 +2,11 @@
     &__header {
         margin-bottom: 24px;
     }
+    &__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     &__body > .book {
         margin-right: 24px;
     }
