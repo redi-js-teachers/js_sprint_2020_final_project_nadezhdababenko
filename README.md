@@ -1,19 +1,18 @@
 # REDI Sprint 2020 Frontend Development 2, Final Project
 
-Application Name: {booklover}
+Application Name: booklover
 
-Student Name: {Nadezhda Babenko}
+Student Name: Nadezhda Babenko
 
-## {booklover}
+## booklover
 
-{Social network for reading enthusiasts}
+Social network for reading enthusiasts
 
 ## Screenshots
 
 ![screen shot](docs/screen_cap.png)
 
-## Features:
-
+## Final project features:
 - Convenient service for searching books and reading
 	- important
 		- you can read
@@ -23,7 +22,10 @@ Student Name: {Nadezhda Babenko}
 		- text alignment
 		- screen brightness
 		- chapter search
-	- Interesting
+
+## Additional feature to come:
+- Convenient service for searching books and reading
+	- interesting
 		- creating notes while reading
 		- brief information about the book (author, abstract)
 		- the ability to translate pieces of text into their native language
