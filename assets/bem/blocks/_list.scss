@@ -14,3 +14,13 @@
         margin-right: 0;
     }
 }
+
+
+@media (max-width: 768px) {
+    .list {
+        &__body {
+            width: 100%;
+            overflow-x: scroll;
+        }
+    }
+}

@@ -2,9 +2,7 @@
     &--120 {
         width: 120px;
     }
-    // &--mr {
-    //     margin-right: 24px;
-    // }
+
     &__cover-img {
         width: 120px;
         height: 176px;
@@ -20,7 +18,6 @@
         line-height: 1;
         margin: 0;
         max-height: 18.6px;
-        // display: inline-block;
         color: $black;  
     }
     &__title-link {
@@ -42,7 +39,6 @@
         line-height: 20px;
         margin: 0;
         max-height: 18.2px;
-        // display: inline-block;
         color: $yellow;
     }
     &__autor-link {
@@ -55,4 +51,11 @@
         }
     }
     
+}
+
+
+@media (max-width: 768px) {
+    .book {
+        margin-right: 12px;
+    }
 }
