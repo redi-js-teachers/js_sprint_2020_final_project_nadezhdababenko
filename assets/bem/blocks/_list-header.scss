@@ -1,0 +1,32 @@
+.list-header {
+    width: max-content;
+    &__text {
+        font-size: 22px;
+        margin-right: 8px;
+        font-weight: 500;
+        line-height: 1;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        color: $orange;
+        border: 1px solid $orange;
+        border-radius: 14px;
+        font-size: 8px;
+        padding: 0 8px;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        display: flex;
+        color: $dark-blue;
+        &:hover {
+            .list-header__btn {
+                color: $blue-green;
+                border: 1px solid $blue-green;
+            }
+            color: $blue-green;
+            text-decoration: none;
+        }
+    }
+}

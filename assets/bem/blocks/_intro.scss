@@ -1,0 +1,39 @@
+.intro {
+    background-image: url(../../assets/images/without-log-in/intro2.jpg);
+    background-blend-mode: multiply;
+    background-color: rgba(0,0,0,0.5);
+    background-size: cover;
+    background-position: 100% 100%;
+    width: 100%;
+    padding: 204px 16px 32px;
+    &__title {
+        font-size: 54px;
+        max-width: 680px;
+        margin: 0 auto;
+        line-height: 1.1;
+        text-align: center;
+        color: $white;
+        text-shadow: 5px 0px 5px rgba(0,0,0,0.4);
+    }
+    &__text {
+        text-align: center;
+        color: $white;
+        font-size: 22px;
+        padding: 24px 0;
+    }
+    &__btn-join {
+        color: $white;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            color: $orange;
+        }
+    }
+    &__btn-block {
+        text-align: center;
+    }
+    &__btn {
+        margin: 0 8px;
+    }
+}

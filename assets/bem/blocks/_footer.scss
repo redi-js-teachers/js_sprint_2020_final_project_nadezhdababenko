@@ -1,0 +1,36 @@
+.footer {
+    background-color: $dark-blue;
+    padding: 15px 0;
+    &__social-icon {
+        margin-right: 10px;
+    }
+    &__social-icon:last-child {
+        margin-right: 0;
+    }
+    &__stores {
+        text-align: center;
+    }
+    &__stores > .social-btn:first-child {
+        margin-right: 10px;
+    }
+    &__copyright {
+        color: $grey;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 769px) {
+    .footer {
+        &__social {
+            text-align: center;
+        }
+        &__stores {
+            padding: 10px 0;
+        }
+        &__copyright {
+            justify-content: center;
+        }
+    }
+  }

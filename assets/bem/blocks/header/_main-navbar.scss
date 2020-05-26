@@ -1,0 +1,14 @@
+.main-navbar {
+    &__img {
+        width: 32px;
+    }
+    &__item {
+        font-weight: 700;
+        text-decoration: none;
+        color: #302119;
+        cursor: pointer;
+        &:hover {
+            color: $blue-green;
+        }
+    }
+}

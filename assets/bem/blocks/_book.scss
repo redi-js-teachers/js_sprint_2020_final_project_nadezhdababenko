@@ -1,0 +1,61 @@
+.book {
+    &--120 {
+        width: 120px;
+    }
+
+    &__cover-img {
+        width: 120px;
+        height: 176px;
+    }
+    &__description {
+        margin: 8px 0 0;
+    }
+    &__title {
+        max-width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        line-height: 1;
+        margin: 0;
+        max-height: 18.6px;
+        color: $black;  
+    }
+    &__title-link {
+        color: $black;
+        font-weight: 500;
+        font-size: 13px;
+        max-height: 40px;
+        overflow-y: hidden;
+        line-height: 1;
+        &:hover {
+            color: $dark-blue;
+        }
+    }
+    &__autor {
+        max-width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        line-height: 20px;
+        margin: 0;
+        max-height: 18.2px;
+        color: $yellow;
+    }
+    &__autor-link {
+        font-size: 12px;
+        font-weight: 100;
+        color: $yellow;
+        &:hover {
+            color: $orange;
+            text-decoration: none;
+        }
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+    .book {
+        margin-right: 12px;
+    }
+}
