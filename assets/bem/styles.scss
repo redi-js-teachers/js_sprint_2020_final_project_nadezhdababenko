@@ -2,7 +2,7 @@
 @import "core";
 //margins
 @import "blocks/spacer"; 
-//blocks
+//blocks landing start page
 @import "blocks/header/header";
 @import "blocks/header/main-navbar";
 @import "blocks/intro";
@@ -14,6 +14,34 @@
 @import "blocks/list";
 @import "blocks/list-header";
 @import "blocks/book";
+
+//blocks reader
+@import "blocks/reader-page";
+@import "blocks/reader";
+@import "blocks/reader-header";
+//reader pop-ups 
+@import "blocks/reader-content";//no
+@import "blocks/reader-quote";//no
+@import "blocks/reader-settings";
+@import "blocks/reader-additionally";
+@import "blocks/reader-pop-up";
+
+@import "blocks/overlay";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

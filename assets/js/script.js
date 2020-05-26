@@ -1,8 +1,8 @@
+//add books to bestsellers row on landingpage
 let bestsellerBlock = document.getElementById("bestsellers-start-page");
-for (let i = 0; i < bestsellers.length; i++) {
+for (let i = 0; i < 7; i++) {
     createBook(bestsellers[i]);
 }
-
 function createBook(book) {
     let bookItem = document.createElement('div');
     bookItem.innerHTML = `
@@ -28,4 +28,6 @@ function createBook(book) {
     `
     bestsellerBlock.appendChild(bookItem);
 }
+
+//
 
