@@ -1,0 +1,85 @@
+.reader-header {
+    // transition: opacity .2s,visibility .2s;
+    // opacity: 0;
+    height: 78px;
+    &__nav {
+        // display: flex;
+        // justify-content: space-between;
+        height: 100%;
+        padding: 20px 0;
+        align-items: center;
+    }
+    &__button-back {
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        &:hover {
+            .reader-header__back-icon {
+                color: $blue-green;
+            }
+        }
+    }
+    &__back-icon {
+        color: $black;
+    }
+    &__logo-img {
+        width: 32px;
+        margin-left: 2px;
+    }
+    &__title {
+        font-size: 13px;
+        text-align: center;
+        font-weight: 100;
+    }
+    &__setting-icon {
+        margin-left: 16px;
+        cursor: pointer;
+        color: $black;
+        &:hover {
+            color: $blue-green;
+            transition: .5s;
+        }
+    }
+    [data-tooltip] {
+        position: relative;
+       }
+       [data-tooltip]::after {
+        content: attr(data-tooltip);
+        position: absolute; 
+        width: 70px;
+        text-align: left;
+        font-size: 10px;
+        font-style: italic;
+        left: 0; 
+        top: 0; 
+        color: $dark-blue; 
+        pointer-events: none;
+        opacity: 0; 
+        transition: .5s;
+        margin-top: -4px;
+        z-index: 6;
+       } 
+       [data-tooltip]:hover::after {
+        opacity: 1; 
+        top: 2em;
+       }
+       &__additionally,
+       &__setting-change {
+        opacity: 1;
+        z-index: 5;
+        visibility: hidden;
+        position: absolute;
+        margin: 14px 0 0;
+       }
+       &--visible {
+        visibility: visible!important;
+        }
+        &__setting-change {
+            right: 40px;
+            min-width: 295px;
+        }
+        &__additionally {
+            right: 0;
+            min-width: 200px;
+        }
+}
