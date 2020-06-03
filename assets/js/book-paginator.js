@@ -1,10 +1,9 @@
 let currentPage = 0;
-let maxHeight = 500;
-let bookField = document.getElementById('book');
+let bookField = document.getElementById('reader-book');
 let chunks = []; // кусочки текста (либо отдельные слова, либо теги)
 let splittedPages = []; // массив, хранящий индекс первого и последнего чанка для отображения на странице
 
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
     splitToChunks(book);
     splitToPages();
     drawPage(currentPage);
@@ -48,15 +47,20 @@ function splitToPages() {
 }
 
 function splitToPage(chunkIndex) {
-    while (bookField.offsetHeight < maxHeight && chunkIndex < chunks.length) {
 
-        if (chunks[chunkIndex].includes("<") || chunks[chunkIndex].includes(">")) {
+    while (chunkIndex < chunks.length) {
+
+        if (chunks[chunkIndex].includes('<') || chunks[chunkIndex].includes('>')) {
 			bookField.insertAdjacentHTML('beforeend', chunks[chunkIndex] + '<br />');
         } 
         else {
             bookField.insertAdjacentHTML('beforeend', chunks[chunkIndex] + ' ');
         }
         
+        if (bookField.scrollHeight > bookField.offsetHeight) {
+            return chunkIndex;
+        }
+
         chunkIndex++;
     }
 
@@ -70,7 +74,7 @@ function drawPage(pageIndex) {
     let chunkEndIndex = pageChunksIndexes[1];
 
     for (let i = chunkStartIndex; i < chunkEndIndex; i++) {
-        if (chunks[i].includes("<") || chunks[i].includes(">")) {
+        if (chunks[i].includes('<') || chunks[i].includes('>')) {
 			bookField.insertAdjacentHTML('beforeend', chunks[i] + '<br />');
         } 
         else {
@@ -91,6 +95,12 @@ function nextPage() {
         currentPage++;
         drawPage(currentPage);
     }
+    if (currentPage > 0) {
+        back.classList.remove('reader-page__back-btn--first-page');
+    }
+    if (currentPage === 0) {
+        back.classList.add('reader-page__back-btn--first-page');
+    }
 }
 
 function prevPage() {
@@ -98,5 +108,9 @@ function prevPage() {
         bookField.innerHTML = "";
         currentPage--;
         drawPage(currentPage);
+        back.classList.remove('reader-page__back-btn--first-page');
+    } 
+    if (currentPage === 0) {
+        back.classList.add('reader-page__back-btn--first-page');
     }
 }

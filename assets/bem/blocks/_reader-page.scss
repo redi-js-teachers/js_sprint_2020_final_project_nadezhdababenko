@@ -2,6 +2,34 @@
     height: 100vh;
     background: #fff;
     color: #302119;
+    position: relative;
+
+    &__next-btn,
+    &__back-btn {
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        color: $black;
+        outline: none;
+        &:hover {
+            color: $blue-green;
+        }
+    }
+
+    &__next-btn {
+        right: 0;
+    }
+    &__back-btn {
+        left: 0;
+        &--first-page {
+            color: #3021191a;
+            &:hover {
+                color: #3021191a;
+            }
+        }
+    }
 //Text size theme Settings
     &--font-size-18 > .reader-book {
         font-size: 18px;
