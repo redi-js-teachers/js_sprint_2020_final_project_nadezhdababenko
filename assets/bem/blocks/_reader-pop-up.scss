@@ -24,6 +24,10 @@
         border: none;
         background-color: transparent;
         outline: none;
+        &:hover {
+            color: $blue-green;
+            outline: none;
+        }
     }
     &__content {
         text-align: center;

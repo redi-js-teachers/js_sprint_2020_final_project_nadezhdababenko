@@ -14,19 +14,24 @@
 @import "blocks/list";
 @import "blocks/list-header";
 @import "blocks/book";
+@import "blocks/overlay"; 
+@import "blocks/pop-up";
+
+
+
 
 //blocks reader
 @import "blocks/reader-page";
-@import "blocks/reader";
+@import "blocks/reader-book";
 @import "blocks/reader-header";
+@import "blocks/reader-footer";
+
+
 //reader pop-ups 
-@import "blocks/reader-content";//no
-@import "blocks/reader-quote";//no
 @import "blocks/reader-settings";
 @import "blocks/reader-additionally";
 @import "blocks/reader-pop-up";
 
-@import "blocks/overlay";
 
 
 

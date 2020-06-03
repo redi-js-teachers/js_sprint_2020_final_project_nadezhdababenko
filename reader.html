@@ -10,7 +10,7 @@
     <title>Booklover</title>
 </head>
 <body>
-    <div class="reader-page container-fluid">
+    <div class="reader-page container-fluid" id="reader-page">
         <div class="reader-header container">
             <div class="reader-header__nav row">
                 <button class="reader-header__button-back col-md-3 text-left">
@@ -28,7 +28,7 @@
                         <!-- pop-up-window -->
                         <div class="overlay" id="quote">
                             <div class="reader-pop-up">
-                                <button class="reader-pop-up__close">
+                                <button class="reader-pop-up__close" id="quote-close">
                                     <i class="fa fa-times fa-lg"></i>
                                 </button>
                                 <div class="reader-pop-up__content">
@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                         </div>
-                    <i class="reader-header__setting-icon fa fa-arrows-alt fa-lg" data-tooltip="Full screen mode"></i>
+                    <i class="reader-header__setting-icon fa-lg fa fa-arrows-alt" data-tooltip="Full screen mode" id="full-screen"></i>
                     <i class="reader-header__setting-icon fa fa-cogs fa-lg" data-tooltip="Settings" id="open-settings"></i>
                         <!-- pop-up-window -->
                     <div class="reader-header__setting-change reader-settings" id="settings">
@@ -47,8 +47,8 @@
                                     Text size
                                 </div>
                                 <div class="reader-settings__options">
-                                    <i class="reader-settings__icon fa fa-plus fa-lg"></i>
-                                    <i class="reader-settings__icon fa fa-minus fa-lg"></i>
+                                    <i class="reader-settings__icon reader-settings__icon--active fa fa-minus fa-lg" id="text-smaller"></i>
+                                    <i class="reader-settings__icon fa fa-plus fa-lg" id="text-bigger"></i>
                                 </div>
                             </div>
                             <div class="reader-settings__item">
@@ -56,8 +56,8 @@
                                     Text alignment
                                 </div>
                                 <div class="reader-settings__options">
-                                    <i class="reader-settings__icon fa fa-align-left fa-lg"></i>
-                                    <i class="reader-settings__icon fa fa-align-justify fa-lg"></i>
+                                    <i class="reader-settings__icon reader-settings__icon--active fa fa-align-left fa-lg" id="alignment-left"></i>
+                                    <i class="reader-settings__icon fa fa-align-justify fa-lg" id="alignment-justify"></i>
                                 </div>
                             </div>
                             <div class="reader-settings__item">
@@ -65,39 +65,35 @@
                                     Line spacing
                                 </div>
                                 <div class="reader-settings__options">
-                                    <i class="reader-settings__icon fa fa-arrow-up fa-lg"></i>
-                                    <i class="reader-settings__icon fa fa-arrow-down fa-lg"></i>
+                                    <i class="reader-settings__icon reader-settings__icon--active fa fa-arrow-down fa-lg" id="line-spacing-14"></i>
+                                    <i class="reader-settings__icon fa fa-arrow-up fa-lg" id="line-spacing-16"></i>
                                 </div>
                             </div>
                             <div class="reader-settings__item">
-                                <div class="reader-settings__color reader-settings__color--active">
-                                    <!-- <i class="reader-settings__color-check fa fa-check fa-lg"></i> -->
+                                <div class="reader-settings__color reader-settings__color--active" id="white-theme">
                                     Aa
                                 </div>
-                                <div class="reader-settings__color">
-                                    <!-- <i class="reader-settings__color-check fa fa-check fa-lg"></i> -->
+                                <div class="reader-settings__color" id="black-theme">
                                     Aa
                                 </div>
-                                <div class="reader-settings__color">
-                                    <!-- <i class="reader-settings__color-check fa fa-check fa-lg"></i> -->
+                                <div class="reader-settings__color" id="sepia-theme">
                                     Aa
                                 </div>
-                                <div class="reader-settings__color">
-                                    <!-- <i class="reader-settings__color-check fa fa-check fa-lg"></i> -->
+                                <div class="reader-settings__color" id="grey-theme">
                                     Aa
                                 </div>
                             </div>
                             <div class="reader-settings__item">
-                                <div class="reader-settings__style">
+                                <div class="reader-settings__style reader-settings__style--active" id="style-times">
                                     Times
                                 </div>
-                                <div class="reader-settings__style">
+                                <div class="reader-settings__style" id="style-arial">
                                     Arial
                                 </div>
-                                <div class="reader-settings__style">
+                                <div class="reader-settings__style" id="style-verdana">
                                     Verdana
                                 </div>
-                                <div class="reader-settings__style">
+                                <div class="reader-settings__style" id="style-gill-sans">
                                     Gill Sans
                                 </div>
                             </div>
@@ -138,22 +134,21 @@
             </div>
         </div>
 
-        <div class="reader-content">
-            
-        </div>
-
-        <div class="reader-quote">
-            
-        </div>
 
 
 
-        <div class="reader" id="reader-field">
+
+
+
+        <!-- <div class="reader" id="reader-field">
             <input type="file" id="file-input" />
             <button id="read-button">Read File</label>
-        </div>
+        </div> -->
 
-        <div id="reader-book"></div>
+        <div class="reader-book" id="reader-book">
+            <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, odit! Unde saepe sint necessitatibus eos accusantium qui dicta nemo, quibusdam, eius vero est earum. Qui dignissimos quas magni modi eveniet aliquam cum nam vitae tenetur ut saepe ipsam commodi sed cupiditate exercitationem blanditiis, quo maxime hic asperiores sit quibusdam temporibus optio quam. Eaque molestias voluptate vel asperiores tempore, beatae quaerat accusamus? Itaque aliquid sint quis excepturi maiores, numquam iste temporibus! Vitae adipisci repellendus eum? Impedit unde ut repellat, dolorem fugit rem voluptatem reiciendis a quae et perferendis facere eligendi tempora commodi explicabo sequi illum dolores? Ut molestiae, dolores ad dolorum itaque ea voluptatum, magni temporibus ullam laboriosam nulla! Porro, quos mollitia cumque libero sint facilis consectetur distinctio molestiae soluta magnam dolorum minus voluptas. Mollitia unde aliquid deleniti modi quisquam architecto totam animi consequuntur! Perspiciatis ipsam quibusdam dolor voluptas quaerat a numquam inventore voluptatem vero, deleniti, exercitationem, maxime quisquam culpa ipsum neque tenetur. Distinctio officiis labore, expedita dolor tenetur earum illo sed error porro ex placeat inventore sint? Quisquam laudantium suscipit, cum consequatur at possimus placeat eveniet. Id, placeat totam. Earum eligendi itaque cum modi nam officia a unde consequuntur, deleniti perspiciatis, commodi doloremque corporis eum? Accusamus facilis officiis illum numquam. -->
+        
+        </div>
 
         <div class="reader-footer">
 
