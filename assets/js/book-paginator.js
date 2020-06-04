@@ -1,13 +1,16 @@
 let currentPage = 0;
 let bookField = document.getElementById('reader-book');
+let calcField = document.getElementById('reader-book-processing');
 let chunks = []; // кусочки текста (либо отдельные слова, либо теги)
 let splittedPages = []; // массив, хранящий индекс первого и последнего чанка для отображения на странице
 
-window.addEventListener('load', function() {
+window.addEventListener('load', load(), false);
+
+function load() {
     splitToChunks(book);
     splitToPages();
     drawPage(currentPage);
-}, false);
+}
 
 function splitToChunks(text) {
     let rows = text.split("\n");
@@ -38,12 +41,12 @@ function splitToPages() {
     while (chunkEndIndex < chunks.length) {
         chunkEndIndex = splitToPage(chunkStartIndex);
         splittedPages[pageNumber] = [chunkStartIndex, chunkEndIndex];
-        bookField.innerHTML = "";
+        calcField.innerHTML = "";
         chunkStartIndex = chunkEndIndex;
         pageNumber++;
     }
 
-    bookField.innerHTML = "";
+    calcField.innerHTML = "";
 }
 
 function splitToPage(chunkIndex) {
@@ -51,13 +54,13 @@ function splitToPage(chunkIndex) {
     while (chunkIndex < chunks.length) {
 
         if (chunks[chunkIndex].includes('<') || chunks[chunkIndex].includes('>')) {
-			bookField.insertAdjacentHTML('beforeend', chunks[chunkIndex] + '<br />');
+			calcField.insertAdjacentHTML('beforeend', chunks[chunkIndex] + '<br />');
         } 
         else {
-            bookField.insertAdjacentHTML('beforeend', chunks[chunkIndex] + ' ');
+            calcField.insertAdjacentHTML('beforeend', chunks[chunkIndex] + ' ');
         }
         
-        if (bookField.scrollHeight > bookField.offsetHeight) {
+        if (calcField.scrollHeight > calcField.offsetHeight) {
             return chunkIndex;
         }
 

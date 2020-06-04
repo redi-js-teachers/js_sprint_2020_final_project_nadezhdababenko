@@ -6,4 +6,11 @@
     color: #302119;
     font-family: 'Times New Roman', Times, serif;
     margin: 0px 30px;
+    z-index: 3;
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    &--visibility {
+        z-index: 1;
+    }
 }
