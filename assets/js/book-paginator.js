@@ -1,15 +1,30 @@
-let currentPage = 0;
 let bookField = document.getElementById('reader-book');
 let calcField = document.getElementById('reader-book-processing');
-let chunks = []; // кусочки текста (либо отдельные слова, либо теги)
-let splittedPages = []; // массив, хранящий индекс первого и последнего чанка для отображения на странице
+let chunks = []; // peaces of text(either single words or tags)
+let splittedPages = []; // an array storing the index of the first and last chunk to display on the page
 
-window.addEventListener('load', load(), false);
+document.addEventListener('DOMContentLoaded', initialize());
 
-function load() {
-    splitToChunks(book);
-    splitToPages();
-    drawPage(currentPage);
+window.addEventListener('load', function() {
+        splitToChunks(book);
+        splitToPages();
+        let currentPage = localStorage.getItem(pageNumberKey);
+        drawPage(currentPage);
+    },
+    false
+);
+
+function initialize() { //sets initial configurations for bookField
+    bookField.style.fontSize = localStorage.getItem(fontSizeKey) +'px';
+    bookField.style.textAlign = localStorage.getItem(textAlignmentKey);
+    bookField.style.lineHeight = localStorage.getItem(lineSpasingKey);
+    bookField.style.fontFamily = localStorage.getItem(fontFamilyKey);
+
+    let currentFontFamilyActiveId = localStorage.getItem(fontFamilyActiveIdKey);
+    document.getElementById(currentFontFamilyActiveId).classList.add('reader-settings__style--active');
+    if(localStorage.getItem(pageNumberKey) === 0) {
+        document.getElementById('back').classList.add = 'reader-page__back-btn--first-page';
+    }
 }
 
 function splitToChunks(text) {
@@ -93,10 +108,13 @@ let back = document.getElementById('back');
 back.addEventListener('click', prevPage);
 
 function nextPage() {
+    let currentPage = localStorage.getItem(pageNumberKey);
+
     if (currentPage < splittedPages.length) {
         bookField.innerHTML = "";
         currentPage++;
         drawPage(currentPage);
+        localStorage.setItem(pageNumberKey, currentPage);
     }
     if (currentPage > 0) {
         back.classList.remove('reader-page__back-btn--first-page');
@@ -107,12 +125,15 @@ function nextPage() {
 }
 
 function prevPage() {
+    let currentPage = localStorage.getItem(pageNumberKey);
+
     if (currentPage > 0) {
         bookField.innerHTML = "";
         currentPage--;
         drawPage(currentPage);
         back.classList.remove('reader-page__back-btn--first-page');
-    } 
+        localStorage.setItem(pageNumberKey, currentPage);
+    }
     if (currentPage === 0) {
         back.classList.add('reader-page__back-btn--first-page');
     }

@@ -14,7 +14,7 @@ let book = `
   <a href=""> V. </a>&nbsp;&nbsp;The Wine-shop 
   <a href=""> VI. </a>&nbsp;&nbsp;The Shoemaker 
   </br>
-  <a href=""><b>Book the Second&mdash;the Golden Thread</b></a>
+  <a href=""> !!!!</a>&nbsp;&nbsp;<b>Book the Second&mdash;the Golden Thread</b> 
   <a href=""> I. </a>&nbsp;&nbsp;Five Years Later 
   <a href=""> II. </a>&nbsp;&nbsp;A Sight 
   <a href=""> III. </a>&nbsp;&nbsp;A Disappointment 
@@ -40,7 +40,7 @@ let book = `
   <a href=""> XXIII. &nbsp;&nbsp;</a>&nbsp;&nbsp;Fire Rises 
   <a href=""> XXIV. </a>&nbsp;&nbsp;Drawn to the Loadstone Rock  
   </br>
-  <a href=""><b>Book the Third&mdash;the Track of a Storm</b> 
+  <a href=""> !!!!</a>&nbsp;&nbsp;<b>Book the Third&mdash;the Track of a Storm</b> 
   <a href=""> I. </a>&nbsp;&nbsp;In Secret 
   <a href=""> II. </a>&nbsp;&nbsp;The Grindstone 
   <a href=""> III. </a>&nbsp;&nbsp;The Shadow 
@@ -76,7 +76,6 @@ France, less favoured on the whole as to matters spiritual than her sister of th
 In England, there was scarcely an amount of order and protection to justify much national boasting. Daring burglaries by armed men, and highway robberies, took place in the capital itself every night; families were publicly cautioned not to go out of town without removing their furniture to upholsterers' warehouses for security; the highwayman in the dark was a City tradesman in the light, and, being recognised and challenged by his fellow-tradesman whom he stopped in his character of &ldquo;the Captain,&rdquo; gallantly shot him through the head and rode away; the mail was waylaid by seven robbers, and the guard shot three dead, and then got shot dead himself by the other four, &ldquo;in consequence of the failure of his ammunition:&rdquo; after which the mail was robbed in peace; that magnificent potentate, the Lord Mayor of London, was made to stand and deliver on Turnham Green, by one highwayman, who despoiled the illustrious creature in sight of all his retinue; prisoners in London gaols fought battles with their turnkeys, and the majesty of the law fired blunderbusses in among them, loaded with rounds of shot and ball; thieves snipped off diamond crosses from the necks of noble lords at Court drawing-rooms; musketeers went into St. Giles's, to search for contraband goods, and the mob fired on the musketeers, and the musketeers fired on the mob, and nobody thought any of these occurrences much out of the common way. In the midst of them, the hangman, ever busy and ever worse than useless, was in constant requisition; now, stringing up long rows of miscellaneous criminals; now, hanging a housebreaker on Saturday who had been taken on Tuesday; now, burning people in the hand at Newgate by the dozen, and now burning pamphlets at the door of Westminster Hall; to-day, taking the life of an atrocious murderer, and to-morrow of a wretched pilferer who had robbed a farmer's boy of sixpence. 
 <br /> 
 All these things, and a thousand like them, came to pass in and close upon the dear old year one thousand seven hundred and seventy-five. Environed by them, while the Woodman and the Farmer worked unheeded, those two of the large jaws, and those other two of the plain and the fair faces, trod with stir enough, and carried their divine rights with a high hand. Thus did the year one thousand seven hundred and seventy-five conduct their Greatnesses, and myriads of small creatures&mdash;the creatures of this chronicle among the rest&mdash;along the roads that lay before them. 
-
 <h2>II. The Mail</h2>
 <p class="pfirst"><span class="dropcap" style="font-size: 4.00em">I</span>t was the Dover road that lay, on a Friday night late in November, before the first of the persons with whom this history has business. The Dover road lay, as to him, beyond the Dover mail, as it lumbered up Shooter's Hill. He walked up hill in the mire by the side of the mail, as the rest of the passengers did; not because they had the least relish for walking exercise, under the circumstances, but because the hill, and the harness, and the mud, and the mail, were all so heavy, that the horses had three times already come to a stop, besides once drawing the coach across the road, with the mutinous intent of taking it back to Blackheath. Reins and whip and coachman and guard, however, in combination, had read that article of war which forbade a purpose otherwise strongly in favour of the argument, that some brute animals are endued with Reason; and the team had capitulated and returned to their duty. 
 <br /> 
@@ -320,171 +319,6 @@ Jerry!&rdquo;
 <!--  H2 anchor --> </a>
 
  
-<h2>
-III. The Night Shadows
-</h2>
-<p class="pfirst"><span class="dropcap" style="font-size: 4.00em">A</span> wonderful fact to reflect upon, that every human creature is constituted
-to be that profound secret and mystery to every other. A solemn
-consideration, when I enter a great city by night, that every one of those
-darkly clustered houses encloses its own secret; that every room in every
-one of them encloses its own secret; that every beating heart in the
-hundreds of thousands of breasts there, is, in some of its imaginings, a
-secret to the heart nearest it! Something of the awfulness, even of Death
-itself, is referable to this. No more can I turn the leaves of this dear
-book that I loved, and vainly hope in time to read it all. No more can I
-look into the depths of this unfathomable water, wherein, as momentary
-lights glanced into it, I have had glimpses of buried treasure and other
-things submerged. It was appointed that the book should shut with a
-spring, for ever and for ever, when I had read but a page. It was
-appointed that the water should be locked in an eternal frost, when the
-light was playing on its surface, and I stood in ignorance on the shore.
-My friend is dead, my neighbour is dead, my love, the darling of my soul,
-is dead; it is the inexorable consolidation and perpetuation of the secret
-that was always in that individuality, and which I shall carry in mine to
-my life's end. In any of the burial-places of this city through which I
-pass, is there a sleeper more inscrutable than its busy inhabitants are,
-in their innermost personality, to me, or than I am to them?
 
-<br />
-As to this, his natural and not to be alienated inheritance, the messenger
-on horseback had exactly the same possessions as the King, the first
-Minister of State, or the richest merchant in London. So with the three
-passengers shut up in the narrow compass of one lumbering old mail coach;
-they were mysteries to one another, as complete as if each had been in his
-own coach and six, or his own coach and sixty, with the breadth of a
-county between him and the next.
-
-<br />
-The messenger rode back at an easy trot, stopping pretty often at
-ale-houses by the way to drink, but evincing a tendency to keep his own
-counsel, and to keep his hat cocked over his eyes. He had eyes that
-assorted very well with that decoration, being of a surface black, with no
-depth in the colour or form, and much too near together&mdash;as if they
-were afraid of being found out in something, singly, if they kept too far
-apart. They had a sinister expression, under an old cocked-hat like a
-three-cornered spittoon, and over a great muffler for the chin and throat,
-which descended nearly to the wearer's knees. When he stopped for drink,
-he moved this muffler with his left hand, only while he poured his liquor
-in with his right; as soon as that was done, he muffled again.
-
-<br />
-&ldquo;No, Jerry, no!&rdquo; said the messenger, harping on one theme as he rode. &ldquo;It
-wouldn't do for you, Jerry. Jerry, you honest tradesman, it wouldn't suit
-<i>your</i> line of business! Recalled&mdash;! Bust me if I don't think
-he'd been a drinking!&rdquo;
-
-<br />
-His message perplexed his mind to that degree that he was fain, several
-times, to take off his hat to scratch his head. Except on the crown, which
-was raggedly bald, he had stiff, black hair, standing jaggedly all over
-it, and growing down hill almost to his broad, blunt nose. It was so like
-Smith's work, so much more like the top of a strongly spiked wall than a
-head of hair, that the best of players at leap-frog might have declined
-him, as the most dangerous man in the world to go over.
-
-<br />
-While he trotted back with the message he was to deliver to the night
-watchman in his box at the door of Tellson's Bank, by Temple Bar, who was
-to deliver it to greater authorities within, the shadows of the night took
-such shapes to him as arose out of the message, and took such shapes to
-the mare as arose out of <i>her</i> private topics of uneasiness. They
-seemed to be numerous, for she shied at every shadow on the road.
-
-<br />
-What time, the mail-coach lumbered, jolted, rattled, and bumped upon its
-tedious way, with its three fellow-inscrutables inside. To whom, likewise,
-the shadows of the night revealed themselves, in the forms their dozing
-eyes and wandering thoughts suggested.
-
-<br />
-Tellson's Bank had a run upon it in the mail. As the bank passenger&mdash;with
-an arm drawn through the leathern strap, which did what lay in it to keep
-him from pounding against the next passenger, and driving him into his
-corner, whenever the coach got a special jolt&mdash;nodded in his place,
-with half-shut eyes, the little coach-windows, and the coach-lamp dimly
-gleaming through them, and the bulky bundle of opposite passenger, became
-the bank, and did a great stroke of business. The rattle of the harness
-was the chink of money, and more drafts were honoured in five minutes than
-even Tellson's, with all its foreign and home connection, ever paid in
-thrice the time. Then the strong-rooms underground, at Tellson's, with
-such of their valuable stores and secrets as were known to the passenger
-(and it was not a little that he knew about them), opened before him, and
-he went in among them with the great keys and the feebly-burning candle,
-and found them safe, and strong, and sound, and still, just as he had last
-seen them.
-
-<br />
-But, though the bank was almost always with him, and though the coach (in
-a confused way, like the presence of pain under an opiate) was always with
-him, there was another current of impression that never ceased to run, all
-through the night. He was on his way to dig some one out of a grave.
-
-<br />
-Now, which of the multitude of faces that showed themselves before him was
-the true face of the buried person, the shadows of the night did not
-indicate; but they were all the faces of a man of five-and-forty by years,
-and they differed principally in the passions they expressed, and in the
-ghastliness of their worn and wasted state. Pride, contempt, defiance,
-stubbornness, submission, lamentation, succeeded one another; so did
-varieties of sunken cheek, cadaverous colour, emaciated hands and figures.
-But the face was in the main one face, and every head was prematurely
-white. A hundred times the dozing passenger inquired of this spectre:
-
-<br />
-&ldquo;Buried how long?&rdquo;
-
-<br />
-The answer was always the same: &ldquo;Almost eighteen years.&rdquo;
-
-<br />
-&ldquo;You had abandoned all hope of being dug out?&rdquo;
-
-<br />
-&ldquo;Long ago.&rdquo;
-
-<br />
-&ldquo;You know that you are recalled to life?&rdquo;
-
-<br />
-&ldquo;They tell me so.&rdquo;
-
-<br />
-&ldquo;I hope you care to live?&rdquo;
-
-<br />
-&ldquo;I can't say.&rdquo;
-
-<br />
-&ldquo;Shall I show her to you? Will you come and see her?&rdquo;
-
-<br />
-The answers to this question were various and contradictory. Sometimes the
-broken reply was, &ldquo;Wait! It would kill me if I saw her too soon.&rdquo;
- Sometimes, it was given in a tender rain of tears, and then it was, &ldquo;Take
-me to her.&rdquo; Sometimes it was staring and bewildered, and then it was, &ldquo;I
-don't know her. I don't understand.&rdquo;
-
-<br />
-After such imaginary discourse, the passenger in his fancy would dig, and
-dig, dig&mdash;now with a spade, now with a great key, now with his hands&mdash;to
-dig this wretched creature out. Got out at last, with earth hanging about
-his face and hair, he would suddenly fan away to dust. The passenger would
-then start to himself, and lower the window, to get the reality of mist
-and rain on his cheek.
-
-<br />
-Yet even when his eyes were opened on the mist and rain, on the moving
-patch of light from the lamps, and the hedge at the roadside retreating by
-jerks, the night shadows outside the coach would fall into the train of
-the night shadows within. The real Banking-house by Temple Bar, the real
-business of the past day, the real strong rooms, the real express sent
-after him, and the real message returned, would all be there. Out of the
-midst of them, the ghostly face would rise, and he would accost it again.
-
-<br />
-&ldquo;Buried how long?&rdquo;
-
-<br />
-&ldquo;Almost eighteen years.&rdquo;
 
 `

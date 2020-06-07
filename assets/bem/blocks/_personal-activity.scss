@@ -1,0 +1,23 @@
+.personal-activity {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 4px 8px;
+    border: 1px solid $dark-blue;
+    border-radius: 4px;
+    background-color: $dark-blue;
+    color: $white;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid $blue-green;
+        background-color: $blue-green;
+    }
+    &__icon {
+        margin-right: 12px;
+    }
+    &__title {
+        font-weight: 100;
+        font-size: 14px;
+    }
+}

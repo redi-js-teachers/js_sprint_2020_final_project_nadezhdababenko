@@ -92,39 +92,45 @@ let styleGillSans = document.getElementById('style-gill-sans');
 
 //1.1 text - bigger
 textBigger.addEventListener('click', function() {
-	readerPage.classList.add("reader-page--font-size-18");
-	textSmaller.classList.toggle("reader-settings__icon--active");
-	textBigger.classList.toggle("reader-settings__icon--active");
+	let localFontSize = localStorage.getItem(fontSizeKey);
+	localStorage.setItem(fontSizeKey, Number(localFontSize) + 2);
+	location.reload();
+	// readerPage.classList.add("reader-page--font-size-18");
 });
 //1.2 text - smaller
 textSmaller.addEventListener('click', function() {
-	readerPage.classList.remove("reader-page--font-size-18");
-	textSmaller.classList.toggle("reader-settings__icon--active");
-	textBigger.classList.toggle("reader-settings__icon--active");
+	let localFontSize = localStorage.getItem(fontSizeKey);
+	localStorage.setItem(fontSizeKey, Number(localFontSize) - 2);
+	location.reload();
+	// readerPage.classList.remove("reader-page--font-size-18");
 });
 //2.1 text alignment - bigger
 alignmentLeft.addEventListener('click', function() {
-	readerPage.classList.remove("reader-page--text-alignment-justify");
-	alignmentLeft.classList.toggle("reader-settings__icon--active");
-	alignmentJustify.classList.toggle("reader-settings__icon--active");
+	let LocalTextAlignment = localStorage.getItem(textAlignmentKey);
+	localStorage.setItem(textAlignmentKey, 'justify');
+	location.reload();
+	// readerPage.classList.remove("reader-page--text-alignment-justify");
 });
 //2.2 text alignment - smaller
 alignmentJustify.addEventListener('click', function() {
-	readerPage.classList.add("reader-page--text-alignment-justify");
-	alignmentLeft.classList.toggle("reader-settings__icon--active");
-	alignmentJustify.classList.toggle("reader-settings__icon--active");
+	let LocalTextAlignment = localStorage.getItem(textAlignmentKey);
+	localStorage.setItem(textAlignmentKey, 'left');
+	location.reload();
+	// readerPage.classList.add("reader-page--text-alignment-justify");
 });
 //3.1 line spasing - bigger
 lineSpacing16.addEventListener('click', function() {
-	readerPage.classList.add("reader-page--line-height-16");
-	lineSpacing16.classList.toggle("reader-settings__icon--active");
-	lineSpacing14.classList.toggle("reader-settings__icon--active");
+	let LocallineSpasing = localStorage.getItem(lineSpasingKey);
+	localStorage.setItem(lineSpasingKey,  Number(LocallineSpasing) + 0.2);
+	location.reload();
+	// readerPage.classList.add("reader-page--line-height-16");
 });
 //3.2 line spasing - smaller
 lineSpacing14.addEventListener('click', function() {
-	readerPage.classList.remove("reader-page--line-height-16");
-	lineSpacing16.classList.toggle("reader-settings__icon--active");
-	lineSpacing14.classList.toggle("reader-settings__icon--active");
+	let LocallineSpasing = localStorage.getItem(lineSpasingKey);
+	localStorage.setItem(lineSpasingKey,  Number(LocallineSpasing) - 0.2);
+	location.reload();
+	// readerPage.classList.remove("reader-page--line-height-16");
 });
 //4.1 white-theme
 whiteTheme.addEventListener('click', function() {
@@ -177,53 +183,30 @@ greyTheme.addEventListener('click', function() {
 	sepiaTheme.classList.remove("reader-settings__color--active");
 	greyTheme.classList.toggle("reader-settings__color--active");
 });
+
 //5.1 Times
 styleTimes.addEventListener('click', function() {
-	//change style
-	readerPage.classList.remove("reader-page--arial");
-	readerPage.classList.remove("reader-page--verdana");
-	readerPage.classList.remove("reader-page--gill-sans");
-	//change button of style
-	styleTimes.classList.toggle("reader-settings__style--active");
-	styleArial.classList.remove("reader-settings__style--active");
-	styleVerdana.classList.remove("reader-settings__style--active");
-	styleGillSans.classList.remove("reader-settings__style--active");
+	localStorage.setItem(fontFamilyKey,  "'Times New Roman', Times, serif");
+	localStorage.setItem(fontFamilyActiveIdKey,  this.id);
+	location.reload();
 });
 //5.2 Arial
 styleArial.addEventListener('click', function() {
-	//change style
-	readerPage.classList.add("reader-page--arial");
-	readerPage.classList.remove("reader-page--verdana");
-	readerPage.classList.remove("reader-page--gill-sans");
-	//change button of style
-	styleTimes.classList.remove("reader-settings__style--active");
-	styleArial.classList.toggle("reader-settings__style--active");
-	styleVerdana.classList.remove("reader-settings__style--active");
-	styleGillSans.classList.remove("reader-settings__style--active");
+	localStorage.setItem(fontFamilyKey,  "Arial, Helvetica, sans-serif");
+	localStorage.setItem(fontFamilyActiveIdKey,  this.id);
+	location.reload();
 });
 //5.3 Verdana
 styleVerdana.addEventListener('click', function() {
-	//change style
-	readerPage.classList.add("reader-page--verdana");
-	readerPage.classList.remove("reader-page--arial");
-	readerPage.classList.remove("reader-page--gill-sans");
-	//change button of style
-	styleTimes.classList.remove("reader-settings__style--active");
-	styleArial.classList.remove("reader-settings__style--active");
-	styleVerdana.classList.toggle("reader-settings__style--active");
-	styleGillSans.classList.remove("reader-settings__style--active");
+	localStorage.setItem(fontFamilyKey,  "Verdana, Geneva, Tahoma, sans-serif");
+	localStorage.setItem(fontFamilyActiveIdKey,  this.id);
+	location.reload();
 });
 //5.4 Gill Sans
 styleGillSans.addEventListener('click', function() {
-	//change style
-	readerPage.classList.add("reader-page--gill-sans");
-	readerPage.classList.remove("reader-page--arial");
-	readerPage.classList.remove("reader-page--verdana");
-	//change button of style
-	styleTimes.classList.remove("reader-settings__style--active");
-	styleArial.classList.remove("reader-settings__style--active");
-	styleVerdana.classList.remove("reader-settings__style--active");
-	styleGillSans.classList.toggle("reader-settings__style--active");
+	localStorage.setItem(fontFamilyKey,  "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif");
+	localStorage.setItem(fontFamilyActiveIdKey,  this.id);
+	location.reload();
 });
 
 

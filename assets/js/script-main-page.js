@@ -6,7 +6,7 @@ for (let i = 0; i < 7; i++) {
 function createBook(book) {
     let bookItem = document.createElement('div');
     bookItem.innerHTML = `
-        <div class="book book--120">
+        <div class="book book--120 list__book">
             <div class="book__cover">
                 <a class="book__cover-link" href="#">
                     <img class="book__cover-img" src="${book.urlCover}" alt="${book.title}">
