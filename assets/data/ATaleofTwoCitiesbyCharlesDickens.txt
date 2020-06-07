@@ -1,114 +1,76 @@
-﻿The Project Gutenberg EBook of A Tale of Two Cities, by Charles Dickens
+﻿<h1>A Tale of Two Cities
+A Story of the French Revolution</h1>
+<h2>Charles Dickens</h2>
 
-This eBook is for the use of anyone anywhere at no cost and with
-almost no restrictions whatsoever.  You may copy it, give it away or
-re-use it under the terms of the Project Gutenberg License included
-with this eBook or online at www.gutenberg.org
-
-
-Title: A Tale of Two Cities
-       A Story of the French Revolution
-
-Author: Charles Dickens
-
-Release Date: January, 1994 [EBook #98]
-Posting Date: November 28, 2009
-Last Updated: March 4, 2018
-
-Language: English
-
-Character set encoding: UTF-8
-
-*** START OF THIS PROJECT GUTENBERG EBOOK A TALE OF TWO CITIES ***
+<h3>CONTENTS</h3>
 
 
+     <ul>Book the First--Recalled to Life</ul>
+
+     <li><span>Chapter I</span>      The Period</li>
+     <li><span>Chapter II</span>     The Mail</li>
+     <li><span>Chapter III</span>    The Night Shadows</li>
+     <li><span>Chapter IV</span>     The Preparation</li>
+     <li><span>Chapter V</span>      The Wine-shop</li>
+     <li><span>Chapter VI</span>     The Shoemaker</li>
 
 
-Produced by Judith Boss
+     <ul>Book the Second--the Golden Thread</ul>
+
+     <li><span>Chapter I</span>      Five Years Later</li>
+     <li><span>Chapter II</span>     A Sight</li>
+     <li><span>Chapter III</span>    A Disappointment</li>
+     <li><span>Chapter IV</span>     Congratulatory</li>
+     <li><span>Chapter V</span>      The Jackal</li>
+     <li><span>Chapter VI</span>     Hundreds of People</li>
+     <li><span>Chapter VII</span>    Monseigneur in Town</li>
+     <li><span>Chapter VIII</span>   Monseigneur in the Country</li>
+     <li><span>Chapter IX</span>     The Gorgon's Head</li>
+     <li><span>Chapter X</span>      Two Promises</li>
+     <li><span>Chapter XI</span>     A Companion Picture</li>
+     <li><span>Chapter XII</span>    The Fellow of Delicacy</li>
+     <li><span>Chapter XIII</span>   The Fellow of no Delicacy</li>
+     <li><span>Chapter XIV</span>    The Honest Tradesman</li>
+     <li><span>Chapter XV</span>     Knitting</li>
+     <li><span>Chapter XVI</span>    Still Knitting</li>
+     <li><span>Chapter XVII</span>   One Night</li>
+     <li><span>Chapter XVIII</span>  Nine Days</li>
+     <li><span>Chapter XIX</span>    An Opinion</li>
+     <li><span>Chapter XX</span>     A Plea</li>
+     <li><span>Chapter XXI</span>    Echoing Footsteps</li>
+     <li><span>Chapter XXII</span>   The Sea Still Rises</li>
+     <li><span>Chapter XXIII</span>  Fire Rises</li>
+     <li><span>Chapter XXIV</span>   Drawn to the Loadstone Rock</li>
 
 
+     <ul>Book the Third--the Track of a Storm</ul>
 
-
-
-
-
-
-A TALE OF TWO CITIES
-
-A STORY OF THE FRENCH REVOLUTION
-
-By Charles Dickens
-
-
-CONTENTS
-
-
-     Book the First--Recalled to Life
-
-     Chapter I      The Period
-     Chapter II     The Mail
-     Chapter III    The Night Shadows
-     Chapter IV     The Preparation
-     Chapter V      The Wine-shop
-     Chapter VI     The Shoemaker
-
-
-     Book the Second--the Golden Thread
-
-     Chapter I      Five Years Later
-     Chapter II     A Sight
-     Chapter III    A Disappointment
-     Chapter IV     Congratulatory
-     Chapter V      The Jackal
-     Chapter VI     Hundreds of People
-     Chapter VII    Monseigneur in Town
-     Chapter VIII   Monseigneur in the Country
-     Chapter IX     The Gorgon's Head
-     Chapter X      Two Promises
-     Chapter XI     A Companion Picture
-     Chapter XII    The Fellow of Delicacy
-     Chapter XIII   The Fellow of no Delicacy
-     Chapter XIV    The Honest Tradesman
-     Chapter XV     Knitting
-     Chapter XVI    Still Knitting
-     Chapter XVII   One Night
-     Chapter XVIII  Nine Days
-     Chapter XIX    An Opinion
-     Chapter XX     A Plea
-     Chapter XXI    Echoing Footsteps
-     Chapter XXII   The Sea Still Rises
-     Chapter XXIII  Fire Rises
-     Chapter XXIV   Drawn to the Loadstone Rock
-
-
-     Book the Third--the Track of a Storm
-
-     Chapter I      In Secret
-     Chapter II     The Grindstone
-     Chapter III    The Shadow
-     Chapter IV     Calm in Storm
-     Chapter V      The Wood-sawyer
-     Chapter VI     Triumph
-     Chapter VII    A Knock at the Door
-     Chapter VIII   A Hand at Cards
-     Chapter IX     The Game Made
-     Chapter X      The Substance of the Shadow
-     Chapter XI     Dusk
-     Chapter XII    Darkness
-     Chapter XIII   Fifty-two
-     Chapter XIV    The Knitting Done
-     Chapter XV     The Footsteps Die Out For Ever
+     <li><span>Chapter I</span>      In Secret</li>
+     <li><span>Chapter II</span>     The Grindstone</li>
+     <li><span>Chapter III</span>    The Shadow</li>
+     <li><span>Chapter IV</span>     Calm in Storm</li>
+     <li><span>Chapter V</span>      The Wood-sawyer</li>
+     <li><span>Chapter VI</span>     Triumph</li>
+     <li><span>Chapter VII</span>    A Knock at the Door</li>
+     <li><span>Chapter VIII</span>   A Hand at Cards</li>
+     <li><span>Chapter IX</span>     The Game Made</li>
+     <li><span>Chapter X</span>      The Substance of the Shadow</li>
+     <li><span>Chapter XI</span>     Dusk</li>
+     <li><span>Chapter XII</span>    Darkness</li>
+     <li><span>Chapter XIII</span>   Fifty-two</li>
+     <li><span>Chapter XIV</span>    The Knitting Done</li>
+     <li><span>Chapter XV</span>     The Footsteps Die Out For Ever</li>
 
 
 
 
 
-Book the First--Recalled to Life
+<h3>Book the First--Recalled to Life</h3>
 
 
 
 
-I. The Period
+<h4>I. The Period</h4>
 
 
 It was the best of times,
@@ -214,7 +176,7 @@ roads that lay before them.
 
 
 
-II. The Mail
+<h4>II. The Mail</h4>
 
 
 It was the Dover road that lay, on a Friday night late in November,
@@ -468,7 +430,7 @@ Jerry!”
 
 
 
-III. The Night Shadows
+<h4>III. The Night Shadows</h4>
 
 
 A wonderful fact to reflect upon, that every human creature is
@@ -653,7 +615,7 @@ Creator of day! To be buried alive for eighteen years!”
 
 
 
-IV. The Preparation
+<h4>IV. The Preparation</h4>
 
 
 When the mail got successfully to Dover, in the course of the forenoon,
@@ -1147,7 +1109,7 @@ consider it.
 
 
 
-V. The Wine-shop
+<h4>V. The Wine-shop</h4>
 
 
 A large cask of wine had been dropped and broken, in the street. The
@@ -1598,7 +1560,7 @@ busy, making shoes.
 
 
 
-VI. The Shoemaker
+<h4>VI. The Shoemaker</h4>
 
 
 “Good day!” said Monsieur Defarge, looking down at the white head that
@@ -2075,12 +2037,12 @@ The end of the first book.
 
 
 
-Book the Second--the Golden Thread
+<h3>Book the Second--the Golden Thread</h3>
 
 
 
 
-I. Five Years Later
+<h4>I. Five Years Later</h4>
 
 
 Tellson's Bank by Temple Bar was an old-fashioned place, even in the
@@ -2334,7 +2296,7 @@ rust here!”
 
 
 
-II. A Sight
+<h4>II. A Sight</h4>
 
 
 “You know the Old Bailey well, no doubt?” said one of the oldest of
@@ -2610,7 +2572,7 @@ axe, and hammer the nails into the scaffold.
 
 
 
-III. A Disappointment
+<h4>III. A Disappointment</h4>
 
 
 Mr. Attorney-General had to inform the jury, that the prisoner before
@@ -3201,7 +3163,7 @@ search of other carrion.
 
 
 
-IV. Congratulatory
+<h4>IV. Congratulatory</h4>
 
 
 From the dimly-lighted passages of the court, the last sediment of the
@@ -3491,7 +3453,7 @@ table, and a long winding-sheet in the candle dripping down upon him.
 
 
 
-V. The Jackal
+<h4>V. The Jackal</h4>
 
 
 Those were drinking days, and most men drank hard. So very great is
@@ -3754,7 +3716,7 @@ on him, and resigning himself to let it eat him away.
 
 
 
-VI. Hundreds of People
+<h4>VI. Hundreds of People</h4>
 
 
 The quiet lodgings of Doctor Manette were in a quiet street-corner not
@@ -4291,7 +4253,7 @@ bearing down upon them, too.
 
 
 
-VII. Monseigneur in Town
+<h4>VII. Monseigneur in Town</h4>
 
 
 Monseigneur, one of the great lords in power at the Court, held his
@@ -4631,7 +4593,7 @@ things ran their course.
 
 
 
-VIII. Monseigneur in the Country
+<h4>VIII. Monseigneur in the Country</h4>
 
 
 A beautiful landscape, with the corn bright in it, but not abundant.
@@ -4878,7 +4840,7 @@ of his chateau was opened to him.
 
 
 
-IX. The Gorgon's Head
+<h4>IX. The Gorgon's Head</h4>
 
 
 It was a heavy mass of building, that chateau of Monsieur the Marquis,
@@ -5379,7 +5341,7 @@ was a frill of paper, on which was scrawled:
 
 
 
-X. Two Promises
+<h4>X. Two Promises</h4>
 
 
 More months, to the number of twelve, had come and gone, and Mr. Charles
@@ -5738,7 +5700,7 @@ work, were all as usual.
 
 
 
-XI. A Companion Picture
+<h4>XI. A Companion Picture</h4>
 
 
 “Sydney,” said Mr. Stryver, on that self-same night, or morning, to his
@@ -5919,7 +5881,7 @@ kind of thing for _you_. Now think of it, Sydney.”
 
 
 
-XII. The Fellow of Delicacy
+<h4>XII. The Fellow of Delicacy</h4>
 
 
 Mr. Stryver having made up his mind to that magnanimous bestowal of good
@@ -6218,7 +6180,7 @@ was lying back on his sofa, winking at his ceiling.
 
 
 
-XIII. The Fellow of No Delicacy
+<h4>XIII. The Fellow of No Delicacy</h4>
 
 
 If Sydney Carton ever shone anywhere, he certainly never shone in the
@@ -6425,7 +6387,7 @@ He said, “Farewell!” said a last “God bless you!” and left her.
 
 
 
-XIV. The Honest Tradesman
+<h4>XIV. The Honest Tradesman</h4>
 
 
 To the eyes of Mr. Jeremiah Cruncher, sitting on his stool in
@@ -6861,7 +6823,7 @@ yet be a blessing to you, and a recompense to you for his mother!”
 
 
 
-XV. Knitting
+<h4>XV. Knitting</h4>
 
 
 There had been earlier drinking than usual in the wine-shop of Monsieur
@@ -7338,7 +7300,7 @@ a wave of her hand towards the place where they had last been apparent;
 
 
 
-XVI. Still Knitting
+<h4>XVI. Still Knitting</h4>
 
 
 Madame Defarge and monsieur her husband returned amicably to the
@@ -7838,7 +7800,7 @@ counting dropping heads.
 
 
 
-XVII. One Night
+<h4>XVII. One Night</h4>
 
 
 Never did the sun go down with a brighter glory on the quiet corner in
@@ -8048,7 +8010,7 @@ in praying for him.
 
 
 
-XVIII. Nine Days
+<h4>XVIII. Nine Days</h4>
 
 
 The marriage-day was shining brightly, and they were ready outside the
@@ -8323,7 +8285,7 @@ the dusk of the ninth evening.
 
 
 
-XIX. An Opinion
+<h4>XIX. An Opinion</h4>
 
 
 Worn out by anxious watching, Mr. Lorry fell asleep at his post. On the
@@ -8653,7 +8615,7 @@ crime.
 
 
 
-XX. A Plea
+<h4>XX. A Plea</h4>
 
 
 When the newly-married pair came home, the first person who appeared, to
@@ -8824,7 +8786,7 @@ have parted from his lips for the first time--
 
 
 
-XXI. Echoing Footsteps
+<h4>XXI. Echoing Footsteps</h4>
 
 
 A wonderful corner for echoes, it has been remarked, that corner where
@@ -9294,7 +9256,7 @@ stained red.
 
 
 
-XXII. The Sea Still Rises
+<h4>XXII. The Sea Still Rises</h4>
 
 
 Haggard Saint Antoine had had only one exultant week, in which to soften
@@ -9511,7 +9473,7 @@ Antoine's bosom.
 
 
 
-XXIII. Fire Rises
+<h4>XXIII. Fire Rises</h4>
 
 
 There was a change on the village where the fountain fell, and where
@@ -9801,7 +9763,7 @@ successfully.
 
 
 
-XXIV. Drawn to the Loadstone Rock
+<h4>XXIV. Drawn to the Loadstone Rock</h4>
 
 
 In such risings of fire and risings of sea--the firm earth shaken by
@@ -10292,12 +10254,12 @@ The end of the second book.
 
 
 
-Book the Third--the Track of a Storm
+<h3>Book the Third--the Track of a Storm</h3>
 
 
 
 
-I. In Secret
+<h4>I. In Secret</h4>
 
 
 The traveller fared slowly on his way, who fared towards Paris from
@@ -10806,7 +10768,7 @@ knew, in the swell that rose above them.
 
 
 
-II. The Grindstone
+<h4>II. The Grindstone</h4>
 
 
 Tellson's Bank, established in the Saint Germain Quarter of Paris, was
@@ -11066,7 +11028,7 @@ never given, and would never take away.
 
 
 
-III. The Shadow
+<h4>III. The Shadow</h4>
 
 
 One of the first considerations which arose in the business mind of Mr.
@@ -11289,7 +11251,7 @@ for all that, and in his secret mind it troubled him greatly.
 
 
 
-IV. Calm in Storm
+<h4>IV. Calm in Storm</h4>
 
 
 Doctor Manette did not return until the morning of the fourth day of his
@@ -11483,7 +11445,7 @@ a Spirit moving among mortals.
 
 
 
-V. The Wood-Sawyer
+<h4>V. The Wood-Sawyer</h4>
 
 
 One year and three months. During all that time Lucie was never
@@ -11742,7 +11704,7 @@ he said: “Removed to the Conciergerie, and summoned for to-morrow?”
 
 
 
-VI. Triumph
+<h4>VI. Triumph</h4>
 
 
 The dread tribunal of five Judges, Public Prosecutor, and determined
@@ -12021,7 +11983,7 @@ tremble so. I have saved him.”
 
 
 
-VII. A Knock at the Door
+<h4>VII. A Knock at the Door</h4>
 
 
 “I have saved him.” It was not another of the dreams in which he had
@@ -12255,7 +12217,7 @@ answered to-morrow. Now, I am dumb!”
 
 
 
-VIII. A Hand at Cards
+<h4>VIII. A Hand at Cards</h4>
 
 
 Happily unconscious of the new calamity at home, Miss Pross threaded her
@@ -12816,7 +12778,7 @@ into the dark room here, and let us have one final word alone.”
 
 
 
-IX. The Game Made
+<h4>IX. The Game Made</h4>
 
 
 While Sydney Carton and the Sheep of the prisons were in the adjoining
@@ -13373,7 +13335,7 @@ follows.
 
 
 
-X. The Substance of the Shadow
+<h4>X. The Substance of the Shadow</h4>
 
 
 “I, Alexandre Manette, unfortunate physician, native of Beauvais, and
@@ -14002,7 +13964,7 @@ Conciergerie, and Death within four-and-twenty hours!
 
 
 
-XI. Dusk
+<h4>XI. Dusk</h4>
 
 
 The wretched wife of the innocent man thus doomed to die, fell under
@@ -14181,7 +14143,7 @@ And walked with a settled step, down-stairs.
 
 
 
-XII. Darkness
+<h4>XII. Darkness</h4>
 
 
 Sydney Carton paused in the street, not quite decided where to go. “At
@@ -14563,7 +14525,7 @@ Farewell.
 
 
 
-XIII. Fifty-two
+<h4>XIII. Fifty-two</h4>
 
 
 In the black prison of the Conciergerie, the doomed of the day awaited
@@ -15120,7 +15082,7 @@ us; but, so far, we are pursued by nothing else.
 
 
 
-XIV. The Knitting Done
+<h4>XIV. The Knitting Done</h4>
 
 
 In that same juncture of time when the Fifty-Two awaited their fate
@@ -15651,7 +15613,7 @@ And indeed she never did.
 
 
 
-XV. The Footsteps Die Out For Ever
+<h4>XV. The Footsteps Die Out For Ever</h4>
 
 
 Along the Paris streets, the death-carts rumble, hollow and harsh. Six
@@ -15909,364 +15871,8 @@ far, far better rest that I go to than I have ever known.”
 
 
 
-End of the Project Gutenberg EBook of A Tale of Two Cities, by Charles Dickens
-
-*** END OF THIS PROJECT GUTENBERG EBOOK A TALE OF TWO CITIES ***
-
-***** This file should be named 98-0.txt or 98-0.zip *****
-This and all associated files of various formats will be found in:
-        http://www.gutenberg.org/9/98/
-
-Produced by Judith Boss
-
-Updated editions will replace the previous one--the old editions
-will be renamed.
-
-Creating the works from public domain print editions means that no
-one owns a United States copyright in these works, so the Foundation
-(and you!) can copy and distribute it in the United States without
-permission and without paying copyright royalties.  Special rules,
-set forth in the General Terms of Use part of this license, apply to
-copying and distributing Project Gutenberg-tm electronic works to
-protect the PROJECT GUTENBERG-tm concept and trademark.  Project
-Gutenberg is a registered trademark, and may not be used if you
-charge for the eBooks, unless you receive specific permission.  If you
-do not charge anything for copies of this eBook, complying with the
-rules is very easy.  You may use this eBook for nearly any purpose
-such as creation of derivative works, reports, performances and
-research.  They may be modified and printed and given away--you may do
-practically ANYTHING with public domain eBooks.  Redistribution is
-subject to the trademark license, especially commercial
-redistribution.
 
 
 
-*** START: FULL LICENSE ***
-
-THE FULL PROJECT GUTENBERG LICENSE
-PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
-
-To protect the Project Gutenberg-tm mission of promoting the free
-distribution of electronic works, by using or distributing this work
-(or any other work associated in any way with the phrase “Project
-Gutenberg”), you agree to comply with all the terms of the Full Project
-Gutenberg-tm License (available with this file or online at
-http://gutenberg.org/license).
 
 
-Section 1.  General Terms of Use and Redistributing Project Gutenberg-tm
-electronic works
-
-1.A.  By reading or using any part of this Project Gutenberg-tm
-electronic work, you indicate that you have read, understand, agree to
-and accept all the terms of this license and intellectual property
-(trademark/copyright) agreement.  If you do not agree to abide by all
-the terms of this agreement, you must cease using and return or destroy
-all copies of Project Gutenberg-tm electronic works in your possession.
-If you paid a fee for obtaining a copy of or access to a Project
-Gutenberg-tm electronic work and you do not agree to be bound by the
-terms of this agreement, you may obtain a refund from the person or
-entity to whom you paid the fee as set forth in paragraph 1.E.8.
-
-1.B.  “Project Gutenberg” is a registered trademark.  It may only be
-used on or associated in any way with an electronic work by people who
-agree to be bound by the terms of this agreement.  There are a few
-things that you can do with most Project Gutenberg-tm electronic works
-even without complying with the full terms of this agreement.  See
-paragraph 1.C below.  There are a lot of things you can do with Project
-Gutenberg-tm electronic works if you follow the terms of this agreement
-and help preserve free future access to Project Gutenberg-tm electronic
-works.  See paragraph 1.E below.
-
-1.C.  The Project Gutenberg Literary Archive Foundation (“the Foundation”
- or PGLAF), owns a compilation copyright in the collection of Project
-Gutenberg-tm electronic works.  Nearly all the individual works in the
-collection are in the public domain in the United States.  If an
-individual work is in the public domain in the United States and you are
-located in the United States, we do not claim a right to prevent you from
-copying, distributing, performing, displaying or creating derivative
-works based on the work as long as all references to Project Gutenberg
-are removed.  Of course, we hope that you will support the Project
-Gutenberg-tm mission of promoting free access to electronic works by
-freely sharing Project Gutenberg-tm works in compliance with the terms of
-this agreement for keeping the Project Gutenberg-tm name associated with
-the work.  You can easily comply with the terms of this agreement by
-keeping this work in the same format with its attached full Project
-Gutenberg-tm License when you share it without charge with others.
-
-1.D.  The copyright laws of the place where you are located also govern
-what you can do with this work.  Copyright laws in most countries are in
-a constant state of change.  If you are outside the United States, check
-the laws of your country in addition to the terms of this agreement
-before downloading, copying, displaying, performing, distributing or
-creating derivative works based on this work or any other Project
-Gutenberg-tm work.  The Foundation makes no representations concerning
-the copyright status of any work in any country outside the United
-States.
-
-1.E.  Unless you have removed all references to Project Gutenberg:
-
-1.E.1.  The following sentence, with active links to, or other immediate
-access to, the full Project Gutenberg-tm License must appear prominently
-whenever any copy of a Project Gutenberg-tm work (any work on which the
-phrase “Project Gutenberg” appears, or with which the phrase “Project
-Gutenberg” is associated) is accessed, displayed, performed, viewed,
-copied or distributed:
-
-This eBook is for the use of anyone anywhere at no cost and with
-almost no restrictions whatsoever.  You may copy it, give it away or
-re-use it under the terms of the Project Gutenberg License included
-with this eBook or online at www.gutenberg.org
-
-1.E.2.  If an individual Project Gutenberg-tm electronic work is derived
-from the public domain (does not contain a notice indicating that it is
-posted with permission of the copyright holder), the work can be copied
-and distributed to anyone in the United States without paying any fees
-or charges.  If you are redistributing or providing access to a work
-with the phrase “Project Gutenberg” associated with or appearing on the
-work, you must comply either with the requirements of paragraphs 1.E.1
-through 1.E.7 or obtain permission for the use of the work and the
-Project Gutenberg-tm trademark as set forth in paragraphs 1.E.8 or
-1.E.9.
-
-1.E.3.  If an individual Project Gutenberg-tm electronic work is posted
-with the permission of the copyright holder, your use and distribution
-must comply with both paragraphs 1.E.1 through 1.E.7 and any additional
-terms imposed by the copyright holder.  Additional terms will be linked
-to the Project Gutenberg-tm License for all works posted with the
-permission of the copyright holder found at the beginning of this work.
-
-1.E.4.  Do not unlink or detach or remove the full Project Gutenberg-tm
-License terms from this work, or any files containing a part of this
-work or any other work associated with Project Gutenberg-tm.
-
-1.E.5.  Do not copy, display, perform, distribute or redistribute this
-electronic work, or any part of this electronic work, without
-prominently displaying the sentence set forth in paragraph 1.E.1 with
-active links or immediate access to the full terms of the Project
-Gutenberg-tm License.
-
-1.E.6.  You may convert to and distribute this work in any binary,
-compressed, marked up, nonproprietary or proprietary form, including any
-word processing or hypertext form.  However, if you provide access to or
-distribute copies of a Project Gutenberg-tm work in a format other than
-“Plain Vanilla ASCII” or other format used in the official version
-posted on the official Project Gutenberg-tm web site (www.gutenberg.org),
-you must, at no additional cost, fee or expense to the user, provide a
-copy, a means of exporting a copy, or a means of obtaining a copy upon
-request, of the work in its original “Plain Vanilla ASCII” or other
-form.  Any alternate format must include the full Project Gutenberg-tm
-License as specified in paragraph 1.E.1.
-
-1.E.7.  Do not charge a fee for access to, viewing, displaying,
-performing, copying or distributing any Project Gutenberg-tm works
-unless you comply with paragraph 1.E.8 or 1.E.9.
-
-1.E.8.  You may charge a reasonable fee for copies of or providing
-access to or distributing Project Gutenberg-tm electronic works provided
-that
-
-- You pay a royalty fee of 20% of the gross profits you derive from
-     the use of Project Gutenberg-tm works calculated using the method
-     you already use to calculate your applicable taxes.  The fee is
-     owed to the owner of the Project Gutenberg-tm trademark, but he
-     has agreed to donate royalties under this paragraph to the
-     Project Gutenberg Literary Archive Foundation.  Royalty payments
-     must be paid within 60 days following each date on which you
-     prepare (or are legally required to prepare) your periodic tax
-     returns.  Royalty payments should be clearly marked as such and
-     sent to the Project Gutenberg Literary Archive Foundation at the
-     address specified in Section 4, “Information about donations to
-     the Project Gutenberg Literary Archive Foundation.”
-
-- You provide a full refund of any money paid by a user who notifies
-     you in writing (or by e-mail) within 30 days of receipt that s/he
-     does not agree to the terms of the full Project Gutenberg-tm
-     License.  You must require such a user to return or
-     destroy all copies of the works possessed in a physical medium
-     and discontinue all use of and all access to other copies of
-     Project Gutenberg-tm works.
-
-- You provide, in accordance with paragraph 1.F.3, a full refund of any
-     money paid for a work or a replacement copy, if a defect in the
-     electronic work is discovered and reported to you within 90 days
-     of receipt of the work.
-
-- You comply with all other terms of this agreement for free
-     distribution of Project Gutenberg-tm works.
-
-1.E.9.  If you wish to charge a fee or distribute a Project Gutenberg-tm
-electronic work or group of works on different terms than are set
-forth in this agreement, you must obtain permission in writing from
-both the Project Gutenberg Literary Archive Foundation and Michael
-Hart, the owner of the Project Gutenberg-tm trademark.  Contact the
-Foundation as set forth in Section 3 below.
-
-1.F.
-
-1.F.1.  Project Gutenberg volunteers and employees expend considerable
-effort to identify, do copyright research on, transcribe and proofread
-public domain works in creating the Project Gutenberg-tm
-collection.  Despite these efforts, Project Gutenberg-tm electronic
-works, and the medium on which they may be stored, may contain
-“Defects,” such as, but not limited to, incomplete, inaccurate or
-corrupt data, transcription errors, a copyright or other intellectual
-property infringement, a defective or damaged disk or other medium, a
-computer virus, or computer codes that damage or cannot be read by
-your equipment.
-
-1.F.2.  LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the “Right
-of Replacement or Refund” described in paragraph 1.F.3, the Project
-Gutenberg Literary Archive Foundation, the owner of the Project
-Gutenberg-tm trademark, and any other party distributing a Project
-Gutenberg-tm electronic work under this agreement, disclaim all
-liability to you for damages, costs and expenses, including legal
-fees.  YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
-LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
-PROVIDED IN PARAGRAPH F3.  YOU AGREE THAT THE FOUNDATION, THE
-TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
-LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
-INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
-DAMAGE.
-
-1.F.3.  LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
-defect in this electronic work within 90 days of receiving it, you can
-receive a refund of the money (if any) you paid for it by sending a
-written explanation to the person you received the work from.  If you
-received the work on a physical medium, you must return the medium with
-your written explanation.  The person or entity that provided you with
-the defective work may elect to provide a replacement copy in lieu of a
-refund.  If you received the work electronically, the person or entity
-providing it to you may choose to give you a second opportunity to
-receive the work electronically in lieu of a refund.  If the second copy
-is also defective, you may demand a refund in writing without further
-opportunities to fix the problem.
-
-1.F.4.  Except for the limited right of replacement or refund set forth
-in paragraph 1.F.3, this work is provided to you 'AS-IS' WITH NO OTHER
-WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
-WARRANTIES OF MERCHANTIBILITY OR FITNESS FOR ANY PURPOSE.
-
-1.F.5.  Some states do not allow disclaimers of certain implied
-warranties or the exclusion or limitation of certain types of damages.
-If any disclaimer or limitation set forth in this agreement violates the
-law of the state applicable to this agreement, the agreement shall be
-interpreted to make the maximum disclaimer or limitation permitted by
-the applicable state law.  The invalidity or unenforceability of any
-provision of this agreement shall not void the remaining provisions.
-
-1.F.6.  INDEMNITY - You agree to indemnify and hold the Foundation, the
-trademark owner, any agent or employee of the Foundation, anyone
-providing copies of Project Gutenberg-tm electronic works in accordance
-with this agreement, and any volunteers associated with the production,
-promotion and distribution of Project Gutenberg-tm electronic works,
-harmless from all liability, costs and expenses, including legal fees,
-that arise directly or indirectly from any of the following which you do
-or cause to occur: (a) distribution of this or any Project Gutenberg-tm
-work, (b) alteration, modification, or additions or deletions to any
-Project Gutenberg-tm work, and (c) any Defect you cause.
-
-
-Section  2.  Information about the Mission of Project Gutenberg-tm
-
-Project Gutenberg-tm is synonymous with the free distribution of
-electronic works in formats readable by the widest variety of computers
-including obsolete, old, middle-aged and new computers.  It exists
-because of the efforts of hundreds of volunteers and donations from
-people in all walks of life.
-
-Volunteers and financial support to provide volunteers with the
-assistance they need, are critical to reaching Project Gutenberg-tm's
-goals and ensuring that the Project Gutenberg-tm collection will
-remain freely available for generations to come.  In 2001, the Project
-Gutenberg Literary Archive Foundation was created to provide a secure
-and permanent future for Project Gutenberg-tm and future generations.
-To learn more about the Project Gutenberg Literary Archive Foundation
-and how your efforts and donations can help, see Sections 3 and 4
-and the Foundation web page at http://www.pglaf.org.
-
-
-Section 3.  Information about the Project Gutenberg Literary Archive
-Foundation
-
-The Project Gutenberg Literary Archive Foundation is a non profit
-501(c)(3) educational corporation organized under the laws of the
-state of Mississippi and granted tax exempt status by the Internal
-Revenue Service.  The Foundation's EIN or federal tax identification
-number is 64-6221541.  Its 501(c)(3) letter is posted at
-http://pglaf.org/fundraising.  Contributions to the Project Gutenberg
-Literary Archive Foundation are tax deductible to the full extent
-permitted by U.S. federal laws and your state's laws.
-
-The Foundation's principal office is located at 4557 Melan Dr. S.
-Fairbanks, AK, 99712., but its volunteers and employees are scattered
-throughout numerous locations.  Its business office is located at
-809 North 1500 West, Salt Lake City, UT 84116, (801) 596-1887, email
-business@pglaf.org.  Email contact links and up to date contact
-information can be found at the Foundation's web site and official
-page at http://pglaf.org
-
-For additional contact information:
-     Dr. Gregory B. Newby
-     Chief Executive and Director
-     gbnewby@pglaf.org
-
-
-Section 4.  Information about Donations to the Project Gutenberg
-Literary Archive Foundation
-
-Project Gutenberg-tm depends upon and cannot survive without wide
-spread public support and donations to carry out its mission of
-increasing the number of public domain and licensed works that can be
-freely distributed in machine readable form accessible by the widest
-array of equipment including outdated equipment.  Many small donations
-($1 to $5,000) are particularly important to maintaining tax exempt
-status with the IRS.
-
-The Foundation is committed to complying with the laws regulating
-charities and charitable donations in all 50 states of the United
-States.  Compliance requirements are not uniform and it takes a
-considerable effort, much paperwork and many fees to meet and keep up
-with these requirements.  We do not solicit donations in locations
-where we have not received written confirmation of compliance.  To
-SEND DONATIONS or determine the status of compliance for any
-particular state visit http://pglaf.org
-
-While we cannot and do not solicit contributions from states where we
-have not met the solicitation requirements, we know of no prohibition
-against accepting unsolicited donations from donors in such states who
-approach us with offers to donate.
-
-International donations are gratefully accepted, but we cannot make
-any statements concerning tax treatment of donations received from
-outside the United States.  U.S. laws alone swamp our small staff.
-
-Please check the Project Gutenberg Web pages for current donation
-methods and addresses.  Donations are accepted in a number of other
-ways including checks, online payments and credit card donations.
-To donate, please visit: http://pglaf.org/donate
-
-
-Section 5.  General Information About Project Gutenberg-tm electronic
-works.
-
-Professor Michael S. Hart is the originator of the Project Gutenberg-tm
-concept of a library of electronic works that could be freely shared
-with anyone.  For thirty years, he produced and distributed Project
-Gutenberg-tm eBooks with only a loose network of volunteer support.
-
-
-Project Gutenberg-tm eBooks are often created from several printed
-editions, all of which are confirmed as Public Domain in the U.S.
-unless a copyright notice is included.  Thus, we do not necessarily
-keep eBooks in compliance with any particular paper edition.
-
-
-Most people start at our Web site which has the main PG search facility:
-
-     http://www.gutenberg.org
-
-This Web site includes information about Project Gutenberg-tm,
-including how to make donations to the Project Gutenberg Literary
-Archive Foundation, how to help produce our new eBooks, and how to
-subscribe to our email newsletter to hear about new eBooks.
