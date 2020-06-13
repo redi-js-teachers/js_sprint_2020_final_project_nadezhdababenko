@@ -1,27 +1,21 @@
-.book {
-    &--84 {
+.book-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 4px;
+    padding: 8px 16px;
+    box-shadow: 0 1px 0 0 #ddd6cf;
+    &__content {
+        display: flex;
+    }
+    &__cover-img {
         width: 84px;
-        & .book__cover-img {
-            width: 84px;
-            height: 124px;
-        }
-    }
-    &--120 {
-        width: 120px;
-        & .book__cover-img {
-            width: 120px;
-            height: 176px;
-        }
-    }
-    &--176 {
-        width: 176px;
-        & .book__cover-img {
-            width: 176px;
-            height: 247px;
-        }
+        height: 124px;
     }
     &__description {
-        margin: 8px 0 0;
+        margin: auto 0;
+        padding-left: 16px;
     }
     &__title {
         max-width: 100%;
@@ -36,7 +30,7 @@
     &__title-link {
         color: $black;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 15px;
         max-height: 40px;
         overflow-y: hidden;
         line-height: 1;
@@ -55,7 +49,7 @@
         color: $yellow;
     }
     &__autor-link {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 100;
         color: $yellow;
         &:hover {
@@ -63,12 +57,19 @@
             text-decoration: none;
         }
     }
-    &__progress {
-        padding-bottom: 6px;
+    &__actions {
+        margin: auto 0;
     }
-    
+    &__action {
+        margin-bottom: 8px;
+    }
+    &__action:last-child {
+        margin-bottom: 0;
+    }
+    &__action {
+        width: 100%;
+    }
+    &__progress {
+        margin-bottom: 8px;
+    }
 }
-
-
-
-

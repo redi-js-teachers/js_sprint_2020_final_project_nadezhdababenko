@@ -1,0 +1,29 @@
+.dropdown-btn {
+    &__btn {
+        background-color: transparent;
+        color: #00353f;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border: 1px solid #00353f;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: transparent;
+        color: #00353f;
+        height: 100%;
+        outline: none;
+        &:hover {
+            color: $blue-green;
+            background-color: transparent;
+            border: 1px solid $blue-green;
+        }
+    }
+    &__title {
+        font-weight: 100;
+        font-size: 14px;
+    }
+    &__item {
+        font-weight: 100!important;
+        font-size: 13px;
+    }
+}

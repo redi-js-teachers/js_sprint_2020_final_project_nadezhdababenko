@@ -22,10 +22,82 @@
                 <div class="main-navbar__nav navbar-nav">
                     <a class="main-navbar__item nav-item nav-link" href="#">Library <span class="sr-only">(current)</span></a>
                     <a class="main-navbar__item nav-item nav-link" href="#">Search</a>
-                    <a class="main-navbar__item nav-item nav-link" href="#">Log in</a>
+                    <a class="main-navbar__item nav-item nav-link" href="#" id="log-in-btn">Log in</a>
                 </div>
             </div>
         </nav>
+    </div>
+
+    <div class="overlay" id="log-in-pop-up">
+        <div class="pop-up" >
+            <form class="pop-up__form">
+                <div class="pop-up__header">
+                    Sign in or Register
+                </div>
+                <div class="pop-up__providers">
+                    <div class="pop-up__providers-button-block">
+                        <button class="pop-up__providers-button" type="submit">
+                            <i class="pop-up__icon fa fa-facebook-square fa-2x"></i>
+                            <div class="pop-up__button-title">
+                                Facebook
+                            </div>
+                        </button>
+                    </div>
+                    <div class="pop-up__providers-button-block">
+                        <button class="pop-up__providers-button" type="submit">
+                            <i class="pop-up__icon fa fa-twitter-square fa-2x"></i>
+                            <div class="pop-up__button-title">
+                                Twitter
+                            </div>
+                        </button>
+                    </div>
+                    <div class="pop-up__providers-button-block">
+                        <button class="pop-up__providers-button" type="submit">
+                            <i class="pop-up__icon fa fa-vk fa-2x"></i>
+                            <div class="pop-up__button-title">
+                                VK
+                            </div>
+                        </button>
+                    </div>
+                    <div class="pop-up__providers-button-block">
+                        <button class="pop-up__providers-button" type="submit">
+                            <i class="pop-up__icon fa fa-google fa-2x"></i>
+                            <div class="pop-up__button-title">
+                                Google
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="pop-up__email-block">
+                    <a class="pop-up__email" href="#" id="log-in-email">
+                         Use email
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="overlay" id="log-in-email-pop-up">
+        <div class="pop-up" >
+            <form class="pop-up__form">
+                <div class="pop-up__header">
+                    Sign in or Register
+                </div>
+                <button class="pop-up__back-btn" id="back-to-main-log-in">
+                    <i class="fa fa-angle-left fa-2x"></i>
+                </button>
+                <div class="pop-up__content-block">
+                    <input class="pop-up__input" type="text" placeholder="Email">
+                    <input class="pop-up__input" type="text" placeholder="Password">
+                    <button class="pop-up__join-btn">
+                        Join
+                    </button>
+                    <button class="pop-up__forgot-btn">
+                        Forgot password?
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <div class="intro">
@@ -288,8 +360,12 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/json/allBooks.js"></script> 
 <script src="assets/json/bestsellers.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/script-main-page.js"></script>
+
+
 </body>
 </html>
 

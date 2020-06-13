@@ -13,6 +13,14 @@
     &__body > .book:last-child {
         margin-right: 0;
     }
+    &--center {
+        & .list__body {
+            justify-content: center;
+        }
+        & .book {
+            margin-right: 24px;
+        }
+    }
 }
 
 
@@ -21,6 +29,9 @@
         &__body {
             width: 100%;
             overflow-x: scroll;
+        }
+        &__book {
+            margin-right: 12px;
         }
     }
 }
