@@ -5,9 +5,23 @@ var bookID = url.searchParams.get("bookID");
 
 //create clicked book -> cover
 let bookCover = document.getElementById("about-book-cover"); //block with book cover
-
-let thisBook = getBookById(bookID);
-createBookCover(thisBook);
+//if bookID is indefined
+if (bookID != indefined) {
+    let thisBook = getBookById(bookID);
+    //create book cover
+    createBookCover(thisBook);
+    //create book description
+    let bookDescription = document.getElementById("about-book-description"); //block with book description
+    createBookDescription(thisBook);
+    //create related books
+    let relatedBooks = document.getElementById("related-books"); //block related books
+    for (let i = 0; i < thisBook.relatedBookIDs.length; i++) {
+        let relatedBookId = thisBook.relatedBookIDs[i];
+        let relatedBook = getBookById(relatedBookId);
+        createRelatedBooks(relatedBook);
+    }
+}
+//create clicked book cover
 function createBookCover(book) {
     let bookItem = document.createElement('div');
     bookItem.innerHTML = `
@@ -27,9 +41,7 @@ function createBookCover(book) {
     `
     bookCover.appendChild(bookItem);
 }
-//create clicked book -> info
-let bookDescription = document.getElementById("about-book-description"); //block with book description
-createBookDescription(thisBook);
+//create clicked book description
 function createBookDescription(book) {
     let bookItem = document.createElement('div');
     bookItem.innerHTML = `
@@ -71,14 +83,7 @@ function createBookDescription(book) {
     bookDescription.appendChild(bookItem);
 }
 
-//create related books
-let relatedBooks = document.getElementById("related-books"); //block related books
-for (let i = 0; i < thisBook.relatedBookIDs.length; i++) {
-    let relatedBookId = thisBook.relatedBookIDs[i];
-    let relatedBook = getBookById(relatedBookId);
-    createRelatedBooks(relatedBook);
-}
-
+//create clicked related books
 function createRelatedBooks(book) {
     let bookItem = document.createElement('div');
     bookItem.innerHTML = `
@@ -105,7 +110,7 @@ function createRelatedBooks(book) {
     relatedBooks.appendChild(bookItem);
 }
 
-//show all description of the book
+//show all description of the THIS book
 $(".description-full__show-more").click(function () {
     if($(".description-full__text").hasClass("description-full--show-more-height")) {
         $(this).text("Read less");
@@ -120,26 +125,24 @@ let addToWaitingListBtn = document.getElementById("add-to-waiting-list");
 addToWaitingListBtn.addEventListener('click', function() {
     let waitingListBookIds = localStorage.getItem(waitingListBookIdsKey);//дай элемент по ключу waitingListBookIdsKey 
     waitingListBookIds = Array.from(waitingListBookIds);//преобразуем в массив, т.к не может понять что это массив
-    
     //check ALREADY READ?
     let alreadyReadBookIds = localStorage.getItem(alreadyReadBookIdsKey);//дай элемент по ключу waitingListBookIdsKey 
     alreadyReadBookIds = Array.from(alreadyReadBookIds);//преобразуем в массив, т.к не может понять что это массив
     if(alreadyReadBookIds.includes(bookID)) {
         return;
     }
-
     //add to waiting list
     if(!waitingListBookIds.includes(bookID)) {//если этот элемент не содержит идентификатор из урл
         waitingListBookIds.push(bookID);
         localStorage.setItem(waitingListBookIdsKey, waitingListBookIds);// отправляем все в локал стор
     }
 });
+
 //add book to Already Read
 let addToAlreadyReadBtn = document.getElementById("add-to-already-read"); 
 addToAlreadyReadBtn.addEventListener('click', function() {
     let alreadyReadBookIds = localStorage.getItem(alreadyReadBookIdsKey);//дай элемент по ключу waitingListBookIdsKey 
     alreadyReadBookIds = Array.from(alreadyReadBookIds);//преобразуем в массив, т.к не может понять что это массив
-    
     //check WAITING LIST?
     let waitingListBookIds = localStorage.getItem(waitingListBookIdsKey);//дай элемент по ключу waitingListBookIdsKey 
     waitingListBookIds = Array.from(waitingListBookIds);//преобразуем в массив, т.к не может понять что это массив
@@ -158,21 +161,18 @@ let readBook = document.getElementById('read-book');
 readBook.addEventListener('click', function() {
     let startedBookIds = localStorage.getItem(startedBookIdsKey);//дай элемент по ключу waitingListBookIdsKey 
     startedBookIds = Array.from(startedBookIds);//преобразуем в массив, т.к не может понять что это массив
-    
     //check ALREADY READ?
     let alreadyReadBookIds = localStorage.getItem(alreadyReadBookIdsKey);//дай элемент по ключу waitingListBookIdsKey 
     alreadyReadBookIds = Array.from(alreadyReadBookIds);//преобразуем в массив, т.к не может понять что это массив
     if(alreadyReadBookIds.includes(bookID)) {
         return;
     }
-    
     //check WAITING LIST?
     let waitingListBookIds = localStorage.getItem(waitingListBookIdsKey);//дай элемент по ключу waitingListBookIdsKey 
     waitingListBookIds = Array.from(waitingListBookIds);//преобразуем в массив, т.к не может понять что это массив
     if(waitingListBookIds.includes(bookID)) {
         return;
     }
-
     //add to started
     if(!startedBookIds.includes(bookID)) {//если этот элемент не содержит идентификатор из урл
         startedBookIds.push(bookID);
