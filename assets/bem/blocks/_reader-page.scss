@@ -20,6 +20,12 @@
 
     &__next-btn {
         right: 0;
+        &--last-page {
+            color: #3021191a;
+            &:hover {
+                color: #3021191a;
+            }
+        }
     }
     &__back-btn {
         left: 0;

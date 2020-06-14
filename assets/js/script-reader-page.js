@@ -1,3 +1,9 @@
+//get url of clicked book from bestsellers row
+var url_string = window.location.href; //window.location.href
+var url = new URL(url_string);
+var bookID = url.searchParams.get("bookID");
+
+
 //open pop-up additional info
 (() => {
 	const block = document.querySelector('#additionally');
@@ -107,14 +113,14 @@ textSmaller.addEventListener('click', function() {
 //2.1 text alignment - bigger
 alignmentLeft.addEventListener('click', function() {
 	let LocalTextAlignment = localStorage.getItem(textAlignmentKey);
-	localStorage.setItem(textAlignmentKey, 'justify');
+	localStorage.setItem(textAlignmentKey, 'left');
 	location.reload();
 	// readerPage.classList.remove("reader-page--text-alignment-justify");
 });
 //2.2 text alignment - smaller
 alignmentJustify.addEventListener('click', function() {
 	let LocalTextAlignment = localStorage.getItem(textAlignmentKey);
-	localStorage.setItem(textAlignmentKey, 'left');
+	localStorage.setItem(textAlignmentKey, 'justify');
 	location.reload();
 	// readerPage.classList.add("reader-page--text-alignment-justify");
 });

@@ -53,11 +53,11 @@ function createBookDescription(book) {
         ${book.title}
     </div>
     <div class="about-book__actions">
-        <button class="personal-activity about-book__action-read">
-            <div class="personal-activity__title" id="read-book">
+        <a href="reader.html?bookID=${book.bookID}" class="personal-activity about-book__action-read" id="read-book">
+            <div class="personal-activity__title">
                 Read
             </div>
-        </button>
+        </a>
 
         <div class="about-book__action-more dropdown-btn dropdown">
             <button class="dropdown-btn__btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
