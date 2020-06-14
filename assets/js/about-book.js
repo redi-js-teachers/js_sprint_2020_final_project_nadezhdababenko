@@ -6,7 +6,7 @@ var bookID = url.searchParams.get("bookID");
 //create clicked book -> cover
 let bookCover = document.getElementById("about-book-cover"); //block with book cover
 //if bookID is indefined
-if (bookID != indefined) {
+if (bookID != undefined) {
     let thisBook = getBookById(bookID);
     //create book cover
     createBookCover(thisBook);
@@ -43,6 +43,7 @@ function createBookCover(book) {
 }
 //create clicked book description
 function createBookDescription(book) {
+    let bookDescription = document.getElementById("about-book-description"); //block with book description
     let bookItem = document.createElement('div');
     bookItem.innerHTML = `
     <a class="about-book__autor" href="#">
@@ -85,6 +86,7 @@ function createBookDescription(book) {
 
 //create clicked related books
 function createRelatedBooks(book) {
+    let relatedBooks = document.getElementById("related-books"); //block related books
     let bookItem = document.createElement('div');
     bookItem.innerHTML = `
         <div class="book book--120 list__book">
