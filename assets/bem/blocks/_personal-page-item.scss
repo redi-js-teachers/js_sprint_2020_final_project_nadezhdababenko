@@ -1,0 +1,36 @@
+.personal-page-item {
+    text-align: center;
+    border: 2px solid $dark-blue;
+    color: $dark-blue;
+    border-radius: 5px;
+    padding: 4px 0px;
+    width: 110px;
+    cursor: pointer;
+    background-color: transparent;
+    &:hover {
+        border: 2px solid $blue-green;
+        color: $blue-green;
+    }
+    &--empty {
+        border: 2px solid $grey-text;
+        color: $grey-text;
+        &:hover {
+            border: 2px solid $grey-text;
+            color: $grey-text;
+        }
+    }
+    &--active {
+        border: 2px solid $blue-green;
+        color: $blue-green;
+        background-color: transparent;
+    }
+    &__amount {
+        font-size: 17px;
+        font-weight: 500;
+    }
+    &__title {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+}
