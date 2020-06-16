@@ -6,10 +6,7 @@ for (let i = 0; i < bestsellerIDs.length; i++) {
     createBook(book);
 }
 function createBook(book) {
-<<<<<<< HEAD
     let author = getAuthorById(book.authorID);
-=======
->>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec
     let bookItem = document.createElement('div');
     bookItem.innerHTML = `
         <div class="book book--120 list__book">
@@ -24,15 +21,9 @@ function createBook(book) {
                         ${book.title}
                     </a>
                 </div>
-<<<<<<< HEAD
                 <div class="book__author">
                     <a class="book__author-link" href="about-author.html?authorID=${author.authorID}">
                     ${author.name}
-=======
-                <div class="book__autor">
-                    <a class="book__autor-link" href="#">
-                    ${book.autor}
->>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec
                     </a>
                 </div>
             </div>

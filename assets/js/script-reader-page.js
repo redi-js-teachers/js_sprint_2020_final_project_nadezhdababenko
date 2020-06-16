@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-=======
-//get url of clicked book from bestsellers row
-var url_string = window.location.href; //window.location.href
-var url = new URL(url_string);
-var bookID = url.searchParams.get("bookID");
-
->>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec
 
 //open pop-up additional info
 (() => {
