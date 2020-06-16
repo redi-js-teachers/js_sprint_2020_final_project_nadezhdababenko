@@ -164,3 +164,32 @@ function createStartedList(book) {
     `
     startedListBlock.appendChild(bookItem);
 }
+
+// show recent books
+for(let i = startedBookIds.length - 1, j = 0; i >= 0 && j < 4; i--, j++) {
+    let startedBookId = startedBookIds[i];
+    let book = getBookById(startedBookId);
+    createRecentBooksList(book);
+}
+
+function createRecentBooksList(book) {
+    let recentBooks = document.getElementById('recent-books');
+    let bookItem = document.createElement('div');
+    bookItem.classList.add('book');
+    bookItem.classList.add('book--84');
+    bookItem.classList.add('personal-page__recent-book');
+    bookItem.innerHTML = `
+    <div class="book-progress book__progress">
+        <i class="book-progress__status-icon fa fa-star-half"></i>
+        <div class="book-progress__amount">
+            1%
+        </div>
+    </div>
+    <div class="book__cover">
+        <a class="book__cover-link" href="#">
+            <img class="book__cover-img" src="${book.urlCover}" alt="${book.title}">
+        </a>
+    </div>
+    `
+    recentBooks.appendChild(bookItem);
+}
