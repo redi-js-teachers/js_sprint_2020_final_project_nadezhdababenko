@@ -9,14 +9,11 @@ if (authorID != null) {
     let thisAuthor = getAuthorById(authorID);
     createAuthorsDescription(thisAuthor);
 
-
-
     for (let i = 0; i < thisAuthor.bookIDs.length; i++) {
         let bookId = thisAuthor.bookIDs[i];
         let book = getBookById(bookId);
         createAuthorsBook(book);
     }
-
 }
 
 function createAuthorsDescription(author) {
@@ -43,7 +40,6 @@ function createAuthorsDescription(author) {
     authorsDescription.appendChild(description);
 }
 
-
 function createAuthorsBook(book) {
     let author = getAuthorById(book.authorID);
     let authorsBooksList = document.getElementById('authors-books-list');
@@ -62,7 +58,7 @@ function createAuthorsBook(book) {
                 </div>
                 <div class="book-card__author">
                     <a class="book-card__author-link" href="about-author.html?authorID=${author.authorID}">
-                    ${author.name}
+                        ${author.name}
                     </a>
                 </div>
             </div>
@@ -76,20 +72,31 @@ function createAuthorsBook(book) {
             <div class="dropdown-menu dropdown-btn__menu" aria-labelledby="dropdownMenuLink" x-placement="top-start" style="position: absolute; transform: translate3d(0px, -128px, 0px); top: 0px; left: 0px; will-change: transform;">
                 <a class="dropdown-item dropdown-btn__item" href="#">Add a review</a>
                 <a class="dropdown-item dropdown-btn__item" href="#">Add to list</a>
-                <a class="dropdown-item dropdown-btn__item" href="#" id="add-to-waiting-list">Add to  your waiting list</a>
-                <a class="dropdown-item dropdown-btn__item" href="#" id="add-to-already-read">Already read</a>
+                <a class="dropdown-item dropdown-btn__item add-to-waiting-list" href="#" data-book-id="${book.bookID}">Add to  your waiting list</a>
+                <a class="dropdown-item dropdown-btn__item add-to-already-read" href="#" data-book-id="${book.bookID}">Already read</a>
             </div>
         </div>
-
-
-
     `
     authorsBooksList.appendChild(bookItem);
 }
 
+//add book to Waiting List
+let addToWaitingListBtns = document.getElementsByClassName("add-to-waiting-list"); 
+for (var i = 0; i < addToWaitingListBtns.length; i++) {
+    addToWaitingListBtns[i].addEventListener('click', function() {
+        console.log(this.dataset.bookID);
+        addToWaitingList(this.dataset.bookId);
+    });
+}
 
-
-
+//add book to Already Read
+let addToAlreadyReadBtns = document.getElementsByClassName("add-to-already-read");
+for (var i = 0; i < addToAlreadyReadBtns.length; i++) {
+    addToAlreadyReadBtns[i].addEventListener('click', function() {
+        console.log(this.dataset.bookID);
+        addToAlreadyRead(this.dataset.bookId);
+    });
+}
 
 //show all description of the THIS book
 $(".description-full__show-more").click(function () {

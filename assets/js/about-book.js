@@ -69,8 +69,8 @@ function createBookDescription(book) {
             <div class="dropdown-menu dropdown-btn__menu" aria-labelledby="dropdownMenuLink">
                 <a class="dropdown-item dropdown-btn__item" href="#">Add a review</a>
                 <a class="dropdown-item dropdown-btn__item" href="#">Add to list</a>
-                <a class="dropdown-item dropdown-btn__item" href="#" id="add-to-waiting-list">Add to  your waiting list</a>
-                <a class="dropdown-item dropdown-btn__item" href="#" id="add-to-already-read">Already read</a>
+                <a class="dropdown-item dropdown-btn__item add-to-waiting-list" href="#" data-book-id="${book.bookID}">Add to  your waiting list</a>
+                <a class="dropdown-item dropdown-btn__item add-to-already-read" href="#" data-book-id="${book.bookID}">Already read</a>
             </div>
         </div>
     </div>
@@ -114,52 +114,6 @@ function createRelatedBooks(book) {
     relatedBooks.appendChild(bookItem);
 }
 
-//show all description of the THIS book
-$(".description-full__show-more").click(function () {
-    if($(".description-full__text").hasClass("description-full--show-more-height")) {
-        $(this).text("Read less");
-    } else {
-        $(this).text("Read more");
-    }
-    $(".description-full__text").toggleClass("description-full--show-more-height");
-});
-
-//add book to Waiting List
-let addToWaitingListBtn = document.getElementById("add-to-waiting-list"); 
-addToWaitingListBtn.addEventListener('click', function() {
-    let waitingListBookIds = getNumberArrayFromLocalStorageByKey(waitingListBookIdsKey);
-    
-    //check ALREADY READ?
-    let alreadyReadBookIds = getNumberArrayFromLocalStorageByKey(alreadyReadBookIdsKey);
-    
-    if(alreadyReadBookIds.includes(bookID)) {
-        return;
-    }
-    //add to waiting list
-    if(!waitingListBookIds.includes(bookID)) {//если этот элемент не содержит идентификатор из урл
-        waitingListBookIds.push(bookID);
-        localStorage.setItem(waitingListBookIdsKey, waitingListBookIds);// отправляем все в локал стор
-    }
-});
-
-//add book to Already Read
-let addToAlreadyReadBtn = document.getElementById("add-to-already-read"); 
-addToAlreadyReadBtn.addEventListener('click', function() {
-    let alreadyReadBookIds = getNumberArrayFromLocalStorageByKey(alreadyReadBookIdsKey);
-
-    //check WAITING LIST?
-    let waitingListBookIds = getNumberArrayFromLocalStorageByKey(waitingListBookIdsKey);
-    
-    if(waitingListBookIds.includes(bookID)) {
-        return;
-    }
-    //add to already read
-    if(!alreadyReadBookIds.includes(bookID)) {//если этот элемент не содержит идентификатор из урл
-        alreadyReadBookIds.push(bookID);
-        localStorage.setItem(alreadyReadBookIdsKey, alreadyReadBookIds);// отправляем все в локал стор
-    }
-});
-
 //add read-book-button actions
 let readBook = document.getElementById('read-book');
 readBook.addEventListener('click', function() {
@@ -184,3 +138,33 @@ readBook.addEventListener('click', function() {
         localStorage.setItem(startedBookIdsKey, startedBookIds);// отправляем все в локал стор
     }
 });
+
+//add book to Waiting List
+let addToWaitingListBtns = document.getElementsByClassName("add-to-waiting-list"); 
+for (var i = 0; i < addToWaitingListBtns.length; i++) {
+    addToWaitingListBtns[i].addEventListener('click', function() {
+        console.log(this.dataset.bookID);
+        addToWaitingList(this.dataset.bookId);
+    });
+}
+
+//add book to Already Read
+let addToAlreadyReadBtns = document.getElementsByClassName("add-to-already-read");
+for (var i = 0; i < addToAlreadyReadBtns.length; i++) {
+    addToAlreadyReadBtns[i].addEventListener('click', function() {
+        console.log(this.dataset.bookID);
+        addToAlreadyRead(this.dataset.bookId);
+    });
+}
+
+//show all description of the THIS book
+$(".description-full__show-more").click(function () {
+    if($(".description-full__text").hasClass("description-full--show-more-height")) {
+        $(this).text("Read less");
+    } else {
+        $(this).text("Read more");
+    }
+    $(".description-full__text").toggleClass("description-full--show-more-height");
+});
+
+
