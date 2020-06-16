@@ -12,9 +12,12 @@ let startedBookIdsKey = 'startedBookIds';
 
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec
 setDefaultValue(pageNumberKey, 0);
 setDefaultValue(fontSizeKey, 16);
 setDefaultValue(textAlignmentKey, "left");
@@ -33,8 +36,11 @@ setDefaultValue(startedBookIdsKey, []);
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec
 function setDefaultValue(key, defaultValue) {
     let currentValue = localStorage.getItem(key);//вытаскивает из локалстор
     if (currentValue === null) {//если не задано ничего, то ..

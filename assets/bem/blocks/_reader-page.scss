@@ -1,0 +1,136 @@
+.reader-page {
+    height: 100vh;
+    background: #fff;
+    color: #302119;
+    position: relative;
+
+    &__next-btn,
+    &__back-btn {
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        color: $black;
+        outline: none;
+        &:hover {
+            color: $blue-green;
+        }
+    }
+
+    &__next-btn {
+        right: 0;
+        &--last-page {
+            color: #3021191a;
+            &:hover {
+                color: #3021191a;
+            }
+        }
+    }
+    &__back-btn {
+        left: 0;
+        &--first-page {
+            color: #3021191a;
+            &:hover {
+                color: #3021191a;
+            }
+        }
+    }
+//Text size theme Settings
+    &--font-size-18 > .reader-book {
+        font-size: 18px;
+    }
+//Text alignment theme Settings
+    &--text-alignment-justify > .reader-book {
+        text-align: justify;
+    }
+//Line spasing theme Settings
+    &--line-height-16 > .reader-book {
+        line-height: 1.6;
+    }
+//BLACK THEME Settings
+    &--black-theme,
+    &--black-theme > .reader-book,
+    &--black-theme .reader-header__setting-icon,
+    &--black-theme .reader-header__back-icon {
+        background: #000;
+        color: #bababa;
+    }
+
+    &--black-theme .reader-setting,
+    &--black-theme .reader-settings__tail:before,
+    &--black-theme .reader-settings__item,
+    &--black-theme .reader-settings__list {
+        background-color: #1d1d1d;
+        color: #bababa;
+    }
+
+    &--black-theme .reader-settings__item,
+    &--black-theme .reader-settings__style {
+        border-bottom: 1px solid #bababa30;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+
+//SEPIA THEME Settings
+    &--sepia-theme,
+    &--sepia-theme > .reader-book,
+    &--sepia-theme .reader-header__setting-icon,
+    &--sepia-theme .reader-header__back-icon {
+        background: #f5efdd;
+        color: #6e422f;
+    }
+
+    &--sepia-theme .reader-setting,
+    &--sepia-theme .reader-settings__tail:before,
+    &--sepia-theme .reader-settings__item,
+    &--sepia-theme .reader-settings__list {
+        background: #f5efdd;
+        color: #6e422f;
+    }
+
+    &--sepia-theme .reader-settings__item,
+    &--sepia-theme .reader-settings__style {
+        border-bottom: 1px solid #6e422f2b;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+//GREY THEME Settings
+    &--grey-theme,
+    &--grey-theme > .reader-book,
+    &--grey-theme .reader-header__setting-icon,
+    &--grey-theme .reader-header__back-icon {
+        background: #373738;
+        color: #dadada;
+    }
+
+    &--grey-theme .reader-setting,
+    &--grey-theme .reader-settings__tail:before,
+    &--grey-theme .reader-settings__item,
+    &--grey-theme .reader-settings__list {
+        background: #212121;
+        color: #dadada;
+    }
+
+    &--grey-theme .reader-settings__item,
+    &--grey-theme .reader-settings__style {
+        border-bottom: 1px solid #dadada26;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+//text themes Settings
+    &--arial > .reader-book {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    &--verdana > .reader-book {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    &--gill-sans > .reader-book {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}

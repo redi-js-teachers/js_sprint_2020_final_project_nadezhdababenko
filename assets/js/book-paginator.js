@@ -1,7 +1,11 @@
 //get url of clicked book from bestsellers row
 var url_string = window.location.href; 
 var url = new URL(url_string);
+<<<<<<< HEAD
 var bookID = getNumberParameterFromUrlByKey("bookID");
+=======
+var bookID = url.searchParams.get("bookID");
+>>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec
 
 let bookField = document.getElementById('reader-book');
 let calcField = document.getElementById('reader-book-processing');
@@ -12,7 +16,11 @@ document.addEventListener('DOMContentLoaded', initialize());
 
 window.addEventListener('load', function() {
         
+<<<<<<< HEAD
         if (bookID != null) {
+=======
+        if (bookID != undefined) {
+>>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec
             var script = document.createElement('script');
             script.onload = function () {
                 splitToChunks(bookText);

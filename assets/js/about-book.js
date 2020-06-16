@@ -1,12 +1,20 @@
 //get url of clicked book from bestsellers row
 var url_string = window.location.href; //window.location.href
 var url = new URL(url_string);
+<<<<<<< HEAD
 var bookID = getNumberParameterFromUrlByKey("bookID");
+=======
+var bookID = url.searchParams.get("bookID");
+>>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec
 
 //create clicked book -> cover
 let bookCover = document.getElementById("about-book-cover"); //block with book cover
 //if bookID is indefined
+<<<<<<< HEAD
 if (bookID != null) {
+=======
+if (bookID != undefined) {
+>>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec
     let thisBook = getBookById(bookID);
     //create book cover
     createBookCover(thisBook);
@@ -43,12 +51,20 @@ function createBookCover(book) {
 }
 //create clicked book description
 function createBookDescription(book) {
+<<<<<<< HEAD
     let author = getAuthorById(book.authorID);
     let bookDescription = document.getElementById("about-book-description"); //block with book description
     let bookItem = document.createElement('div');
     bookItem.innerHTML = `
     <a class="about-book__author" href="about-author.html?authorID=${author.authorID}">
         ${author.name}
+=======
+    let bookDescription = document.getElementById("about-book-description"); //block with book description
+    let bookItem = document.createElement('div');
+    bookItem.innerHTML = `
+    <a class="about-book__autor" href="#">
+        ${book.autor}
+>>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec
     </a>
     <div class="about-book__book-title">
         ${book.title}
@@ -87,7 +103,10 @@ function createBookDescription(book) {
 
 //create clicked related books
 function createRelatedBooks(book) {
+<<<<<<< HEAD
     let author = getAuthorById(book.authorID);
+=======
+>>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec
     let relatedBooks = document.getElementById("related-books"); //block related books
     let bookItem = document.createElement('div');
     bookItem.innerHTML = `
@@ -103,9 +122,15 @@ function createRelatedBooks(book) {
                         ${book.title}
                     </a>
                 </div>
+<<<<<<< HEAD
                 <div class="book__author">
                     <a class="book__author-link" href="about-author.html?authorID=${author.authorID}">
                     ${author.name}
+=======
+                <div class="book__autor">
+                    <a class="book__autor-link" href="#">
+                    ${book.autor}
+>>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec
                     </a>
                 </div>
             </div>
@@ -127,11 +152,19 @@ $(".description-full__show-more").click(function () {
 //add book to Waiting List
 let addToWaitingListBtn = document.getElementById("add-to-waiting-list"); 
 addToWaitingListBtn.addEventListener('click', function() {
+<<<<<<< HEAD
     let waitingListBookIds = getNumberArrayFromLocalStorageByKey(waitingListBookIdsKey);
     
     //check ALREADY READ?
     let alreadyReadBookIds = getNumberArrayFromLocalStorageByKey(alreadyReadBookIdsKey);
     
+=======
+    let waitingListBookIds = localStorage.getItem(waitingListBookIdsKey);//дай элемент по ключу waitingListBookIdsKey 
+    waitingListBookIds = Array.from(waitingListBookIds);//преобразуем в массив, т.к не может понять что это массив
+    //check ALREADY READ?
+    let alreadyReadBookIds = localStorage.getItem(alreadyReadBookIdsKey);//дай элемент по ключу waitingListBookIdsKey 
+    alreadyReadBookIds = Array.from(alreadyReadBookIds);//преобразуем в массив, т.к не может понять что это массив
+>>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec
     if(alreadyReadBookIds.includes(bookID)) {
         return;
     }
@@ -145,11 +178,19 @@ addToWaitingListBtn.addEventListener('click', function() {
 //add book to Already Read
 let addToAlreadyReadBtn = document.getElementById("add-to-already-read"); 
 addToAlreadyReadBtn.addEventListener('click', function() {
+<<<<<<< HEAD
     let alreadyReadBookIds = getNumberArrayFromLocalStorageByKey(alreadyReadBookIdsKey);
 
     //check WAITING LIST?
     let waitingListBookIds = getNumberArrayFromLocalStorageByKey(waitingListBookIdsKey);
     
+=======
+    let alreadyReadBookIds = localStorage.getItem(alreadyReadBookIdsKey);//дай элемент по ключу waitingListBookIdsKey 
+    alreadyReadBookIds = Array.from(alreadyReadBookIds);//преобразуем в массив, т.к не может понять что это массив
+    //check WAITING LIST?
+    let waitingListBookIds = localStorage.getItem(waitingListBookIdsKey);//дай элемент по ключу waitingListBookIdsKey 
+    waitingListBookIds = Array.from(waitingListBookIds);//преобразуем в массив, т.к не может понять что это массив
+>>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec
     if(waitingListBookIds.includes(bookID)) {
         return;
     }
@@ -163,6 +204,7 @@ addToAlreadyReadBtn.addEventListener('click', function() {
 //add read-book-button actions
 let readBook = document.getElementById('read-book');
 readBook.addEventListener('click', function() {
+<<<<<<< HEAD
     let startedBookIds = getNumberArrayFromLocalStorageByKey(startedBookIdsKey);
 
     //check ALREADY READ?
@@ -175,6 +217,19 @@ readBook.addEventListener('click', function() {
     //check WAITING LIST?
     let waitingListBookIds = getNumberArrayFromLocalStorageByKey(waitingListBookIdsKey);
 
+=======
+    let startedBookIds = localStorage.getItem(startedBookIdsKey);//дай элемент по ключу waitingListBookIdsKey 
+    startedBookIds = Array.from(startedBookIds);//преобразуем в массив, т.к не может понять что это массив
+    //check ALREADY READ?
+    let alreadyReadBookIds = localStorage.getItem(alreadyReadBookIdsKey);//дай элемент по ключу waitingListBookIdsKey 
+    alreadyReadBookIds = Array.from(alreadyReadBookIds);//преобразуем в массив, т.к не может понять что это массив
+    if(alreadyReadBookIds.includes(bookID)) {
+        return;
+    }
+    //check WAITING LIST?
+    let waitingListBookIds = localStorage.getItem(waitingListBookIdsKey);//дай элемент по ключу waitingListBookIdsKey 
+    waitingListBookIds = Array.from(waitingListBookIds);//преобразуем в массив, т.к не может понять что это массив
+>>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec
     if(waitingListBookIds.includes(bookID)) {
         return;
     }

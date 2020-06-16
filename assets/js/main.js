@@ -6,6 +6,7 @@ function getBookById(bookID) {
         }
     }
     alert('Book with bookID = ' + bookID + ' does not exist :/');
+<<<<<<< HEAD
 }
 
 function getAuthorById(authorID) {
@@ -37,3 +38,6 @@ function getNumberParameterFromUrlByKey(key) {
         return null;
     }
 }
+=======
+}
+>>>>>>> a6611175f5680371f1eaeac4e82a51d673fa8eec

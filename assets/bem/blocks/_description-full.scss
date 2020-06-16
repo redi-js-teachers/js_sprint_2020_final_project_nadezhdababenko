@@ -1,0 +1,33 @@
+.description-full {
+    position:relative;
+    &__text {
+        margin-bottom: 5px; 
+        color: #777; 
+        position:relative; 
+        font-size: 14px; 
+        display: block;
+        text-align: justify;
+        padding-top: 25px;
+
+    }
+    &__show-more {
+        color: $dark-blue; 
+        position:relative; 
+        font-size: 12px; 
+        text-align: center; 
+        background: #008f9924;
+        cursor: pointer;
+        border-radius: 3px;
+        padding: 5px 0;
+
+    }
+    &__show-more:hover { 
+        color: $blue-green;
+    }
+    &--show-more-height { 
+      height: 106px; 
+      overflow:hidden; 
+    }
+}
+
+

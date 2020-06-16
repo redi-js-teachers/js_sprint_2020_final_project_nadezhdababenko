@@ -1,0 +1,14 @@
+.about-book-reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px 0;
+    background-color: #ddd6cf40;
+    border-bottom: 1px solid #9a938d;
+    &__item {
+        margin-right: 26px;
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+}
