@@ -1,0 +1,39 @@
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid $dark-blue;
+    border-radius: 4px;
+    padding: 8px 12px;
+    &__btn {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        &:hover {
+            color: $blue-green;
+        }
+    }
+    &__input {
+        border: none;
+        width: 100%;
+        outline: none;
+    }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $dark-blue;
+    font-weight: 200;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $dark-blue;
+    font-weight: 200;
+
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: $dark-blue;
+    font-weight: 200;
+
+  }

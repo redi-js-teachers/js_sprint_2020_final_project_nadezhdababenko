@@ -1,3 +1,57 @@
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700&subset=cyrillic");body{margin:0;font-family:"Fira Sans", sans-serif;background-color:#f4f2ef;color:#302119}*{-webkit-box-sizing:border-box;box-sizing:border-box}.spacer--24{margin-bottom:24px}.header{border-bottom:1px solid rgba(221,214,207,0.5);background-color:#f4f2ef}.main-navbar__img{width:32px}.main-navbar__item{font-weight:700;text-decoration:none;color:#302119;cursor:pointer}.main-navbar__item:hover{color:#008f99}.intro{background-image:url(../../assets/images/without-log-in/intro2.jpg);background-blend-mode:multiply;background-color:rgba(0,0,0,0.5);background-size:cover;background-position:100% 100%;width:100%;padding:204px 16px 32px}.intro__title{font-size:54px;max-width:680px;margin:0 auto;line-height:1.1;text-align:center;color:#f4f2ef;text-shadow:5px 0px 5px rgba(0,0,0,0.4)}.intro__text{text-align:center;color:#f4f2ef;font-size:22px;padding:24px 0}.intro__btn-join{color:#f4f2ef;background-color:transparent;border:none;cursor:pointer}.intro__btn-join:hover{color:#ff830c}.intro__btn-block{text-align:center}.intro__btn{margin:0 8px}.social-btn{display:inline-block;vertical-align:middle}.social-btn__link{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;background-color:#000;border-radius:3px;padding:6px 8px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#f4f2ef}.social-btn__link:hover{color:#f4f2ef;text-decoration:none;background-color:#0d0d0d}.social-btn__icon{margin-right:4px}.social-btn__text-block{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;font-weight:700}.social-btn__text{font-size:9px;font-weight:100;line-height:9px;text-align:left}.social-btn__store{line-height:13px;font-size:13px}.social-btn--light .social-btn__link{background-color:transparent;border:1px solid #ddd6cf;color:#ddd6cf}.social-btn--light .social-btn__link:hover{color:#f4f2ef;border:1px solid #f4f2ef}.sections{padding-top:60px}.sections__title{text-align:center;font-size:36px;max-width:680px;margin:0 auto;font-weight:600;line-height:1.5}.sections__item{padding:44px 0}.sections__img1,.sections__img2{background-blend-mode:multiply;background-color:rgba(0,0,0,0.5);background-size:cover;background-position:100% 100%;width:100%}.sections__img1{background-image:url("../../assets/images/section/bg2.jpg")}.sections__img2{background-image:url("../../assets/images/section/bg1.jpg")}.section{color:#000;overflow:hidden}.section__content-block{max-width:400px;display:-webkit-box;display:-ms-flexbox;display:flex}.section__content{margin:auto}.section__title{font-size:26px;font-weight:500;padding-bottom:5px;margin-bottom:5px;line-height:1.4;border-bottom:1px solid #008f99}.section__text{font-size:20px;font-weight:100;line-height:1.2}.section__img{width:300px;height:300px}.section--light{color:#f4f2ef}@media (max-width: 320px){.section__img-block{text-align:center}.section__img{width:250px;height:250px}}@media (max-width: 400px){.section__wrapper--mobile{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}.section__content{padding-top:20px}.section__title{text-align:center}.section__text{text-align:justify}}.footer{background-color:#00353f;padding:15px 0}.footer__social-icon{margin-right:10px}.footer__social-icon:last-child{margin-right:0}.footer__stores{text-align:center}.footer__stores>.social-btn:first-child{margin-right:10px}.footer__copyright{color:#ddd6cf;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}@media (max-width: 769px){.footer__social{text-align:center}.footer__stores{padding:10px 0}.footer__copyright{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}}.social-network{color:#ddd6cf}.social-network:hover{color:#f4f2ef}.list__header{margin-bottom:24px}.list__body{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.list__body>.book{margin-right:24px}.list__body>.book:last-child{margin-right:0}@media (max-width: 768px){.list__body{width:100%;overflow-x:scroll}}.list-header{width:-webkit-max-content;width:-moz-max-content;width:max-content}.list-header__text{font-size:22px;margin-right:8px;font-weight:500;line-height:1}.list-header__btn{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#ff830c;border:1px solid #ff830c;border-radius:14px;font-size:8px;padding:0 8px;text-transform:uppercase}.list-header__link{display:-webkit-box;display:-ms-flexbox;display:flex;color:#00353f}.list-header__link:hover{color:#008f99;text-decoration:none}.list-header__link:hover .list-header__btn{color:#008f99;border:1px solid #008f99}.book--120{width:120px}.book__cover-img{width:120px;height:176px}.book__description{margin:8px 0 0}.book__title{max-width:100%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;line-height:1;margin:0;max-height:18.6px;color:#302119}.book__title-link{color:#302119;font-weight:500;font-size:13px;max-height:40px;overflow-y:hidden;line-height:1}.book__title-link:hover{color:#00353f}.book__autor{max-width:100%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;line-height:20px;margin:0;max-height:18.2px;color:#ffbf66}.book__autor-link{font-size:12px;font-weight:100;color:#ffbf66}.book__autor-link:hover{color:#ff830c;text-decoration:none}@media (max-width: 768px){.book{margin-right:12px}}
+/*
+Error: File to import not found or unreadable: blocks/overlay.
+       Load path: /Users/a1/Desktop/ReDI_school/js_sprint_2020_final_project_nadezhdababenko/assets/bem
+        on line 17 of /Users/a1/Desktop/ReDI_school/js_sprint_2020_final_project_nadezhdababenko/assets/bem/styles.scss
 
-/*# sourceMappingURL=styles.css.map */
+12: @import "blocks/footer";
+13: @import "blocks/social-network";
+14: @import "blocks/list";
+15: @import "blocks/list-header";
+16: @import "blocks/book";
+17: @import "blocks/overlay"; 
+18: @import "blocks/pop-up";
+19: 
+20: //blocks reader
+21: @import "blocks/reader-page";
+22: @import "blocks/reader-book";
+
+Backtrace:
+/Users/a1/Desktop/ReDI_school/js_sprint_2020_final_project_nadezhdababenko/assets/bem/styles.scss:17
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:44:in `import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: blocks/overlay.\A        Load path: /Users/a1/Desktop/ReDI_school/js_sprint_2020_final_project_nadezhdababenko/assets/bem\A         on line 17 of /Users/a1/Desktop/ReDI_school/js_sprint_2020_final_project_nadezhdababenko/assets/bem/styles.scss\A \A 12: @import \"blocks/footer\";\A 13: @import \"blocks/social-network\";\A 14: @import \"blocks/list\";\A 15: @import \"blocks/list-header\";\A 16: @import \"blocks/book\";\A 17: @import \"blocks/overlay\"; \A 18: @import \"blocks/pop-up\";\A 19: \A 20: //blocks reader\A 21: @import \"blocks/reader-page\";\A 22: @import \"blocks/reader-book\";"; }

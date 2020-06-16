@@ -1,0 +1,30 @@
+.search-page {
+    &__content {
+        margin: 0 auto;
+    }
+    &__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        padding: 16px 0;
+    }
+    &__item {
+        margin-right: 42px;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 100;
+        color: $blue-green;
+        cursor: pointer;
+        &:hover {
+            border-bottom: 1px solid $blue-green;
+
+        }
+        &--active {
+            font-weight: 400;
+            border-bottom: 1px solid $blue-green;
+        }
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+}

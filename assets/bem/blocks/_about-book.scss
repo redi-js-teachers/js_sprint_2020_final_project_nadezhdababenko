@@ -1,0 +1,28 @@
+.about-book {
+    &__author {
+        color: $yellow;
+        font-size: 22px;
+        text-decoration: underline;
+        &:hover {
+            color: $orange;
+        }
+    }
+    &__book-title {
+        color: $dark-blue;
+        padding: 3px 0 12px;
+        font-size: 26px;
+    }
+    &__actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+    &__action-read {
+        padding: 10px 90px;
+        margin-right: 16px;
+    }
+    &__action-more .dropdown-btn__btn {
+        padding: 0 18px;
+    }
+
+}

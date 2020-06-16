@@ -19,6 +19,10 @@
         align-items: center;
         justify-content: flex-end;
     }
+    &--fixed {
+        position: fixed;
+        bottom: 0;
+    }
 }
 
 @media (max-width: 769px) {
