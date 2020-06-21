@@ -29,4 +29,14 @@
             text-decoration: none;
         }
     }
+    &--light {
+        & .list-header__text {
+            color: $orange;
+        }
+        & .list-header__link:hover {
+            & .list-header__text {
+                color: $blue-green;
+            }
+        }
+    }
 }

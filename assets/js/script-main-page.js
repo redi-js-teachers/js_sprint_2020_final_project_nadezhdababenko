@@ -5,6 +5,7 @@ for (let i = 0; i < bestsellerIDs.length; i++) {
     let book = getBookById(bookId);
     createBook(book);
 }
+
 function createBook(book) {
     let author = getAuthorById(book.authorID);
     let bookItem = document.createElement('div');
@@ -51,7 +52,6 @@ function createBook(book) {
 	});
   })();
 
-
   //open log in pop up with email
   let logInEmail = document.getElementById('log-in-email');
   logInEmail.addEventListener('click', function() {
@@ -60,6 +60,7 @@ function createBook(book) {
 	const blockEmail = document.querySelector('#log-in-email-pop-up');
     blockEmail.classList.toggle('overlay--visible');
   });
+
   //close log in pop up with email
   let backToMainLogIn = document.getElementById('back-to-main-log-in');
   backToMainLogIn.addEventListener('click', function() {
@@ -68,3 +69,4 @@ function createBook(book) {
 	const blockEmail = document.querySelector('#log-in-email-pop-up');
     blockEmail.classList.remove('overlay--visible');
   });
+  

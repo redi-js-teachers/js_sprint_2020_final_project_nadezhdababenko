@@ -21,7 +21,7 @@
         }
     }
     &__description {
-        margin: 8px 0 0;
+        padding: 8px 0 0;
     }
     &__title {
         max-width: 100%;
@@ -52,19 +52,31 @@
         line-height: 20px;
         margin: 0;
         max-height: 18.2px;
-        color: $yellow;
+        color: $orange;
     }
     &__author-link {
         font-size: 12px;
-        font-weight: 100;
-        color: $yellow;
+        font-weight: 300;
+        color: $orange;
         &:hover {
             color: $orange;
-            text-decoration: none;
+            text-decoration: underline;
         }
     }
     &__progress {
         padding-bottom: 6px;
+    }
+
+    &--border {
+        & .book__cover-img {
+            border-radius: 6px 6px 0 0;
+        }
+        & .book__description {
+            background: $white;
+            padding: 8px 4px 8px;
+            border-radius: 0 0 6px 6px;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,.16), 0 0 0 1px rgba(0,0,0,.08);
+        }
     }
     
 }

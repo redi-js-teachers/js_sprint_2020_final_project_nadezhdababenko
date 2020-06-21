@@ -31,7 +31,5 @@ function addToAlreadyRead(bookID) {
         alreadyReadBookIds.push(bookID);
         localStorage.setItem(alreadyReadBookIdsKey, alreadyReadBookIds);// отправляем все в локал стор
         console.log("b" + alreadyReadBookIds);
-
-    }
+    } 
 }
-

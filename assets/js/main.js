@@ -18,10 +18,9 @@ function getAuthorById(authorID) {
 }
 
 function getNumberArrayFromLocalStorageByKey(key) {
-    let array = localStorage.getItem(key);//дай элемент по ключу key 
-    
+    let array = localStorage.getItem(key);//give element bykey 
     if(array.length >0) {
-        array = Array.from(array.split(','), Number);//преобразуем в массив, т.к не может понять что это массив
+        array = Array.from(array.split(','), Number);//convert to array, it can not understand that it is array
     } else {
         array = [];
     }
@@ -33,6 +32,15 @@ function getNumberParameterFromUrlByKey(key) {
     var parameter = url.searchParams.get(key);
     if (parameter != undefined) {
         return Number(parameter);
+    } else {
+        return null;
+    }
+}
+
+function getParameterFromUrlByKey(key) {
+    var parameter = url.searchParams.get(key);
+    if (parameter != undefined) {
+        return parameter;
     } else {
         return null;
     }

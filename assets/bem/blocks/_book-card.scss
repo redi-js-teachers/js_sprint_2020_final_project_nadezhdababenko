@@ -5,7 +5,8 @@
     background: #fff;
     border-radius: 4px;
     padding: 8px 16px;
-    box-shadow: 0 1px 0 0 #ddd6cf;
+    // box-shadow: 0 1px 0 0 #ddd6cf;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.16), 0 0 0 1px rgba(0,0,0,.08);
     &__content {
         display: flex;
     }
@@ -50,11 +51,10 @@
     }
     &__author-link {
         font-size: 14px;
-        font-weight: 100;
-        color: $yellow;
+        font-weight: 300;
+        color: $orange;
         &:hover {
-            color: $orange;
-            text-decoration: none;
+            text-decoration: underline;
         }
     }
     &__actions {

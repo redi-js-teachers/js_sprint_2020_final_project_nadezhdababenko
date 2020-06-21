@@ -27,9 +27,9 @@ function createBookCover(book) {
     bookItem.innerHTML = `
     <div class="book book--176">
         <div class="book-progress book__progress">
-            <i class="book-progress__status-icon fa fa-star-half"></i>
+            <i class="book-progress__status-icon fa" id="fa-icon"></i>
             <div class="book-progress__amount">
-                0%
+                
             </div>
         </div>
         <div class="book__cover">
@@ -139,12 +139,28 @@ readBook.addEventListener('click', function() {
     }
 });
 
+//started, finished or waiting list?
+checkBookStatus();
+function checkBookStatus() {
+    let waitingListBookIds = getNumberArrayFromLocalStorageByKey(waitingListBookIdsKey);
+    let alreadyReadBookIds = getNumberArrayFromLocalStorageByKey(alreadyReadBookIdsKey);
+    let startedBookIds = getNumberArrayFromLocalStorageByKey(startedBookIdsKey);
+    let faIcon = document.getElementById('fa-icon');
+    if(startedBookIds.includes(bookID)) {
+        faIcon.classList.add('fa-star-half');
+    } else if(waitingListBookIds.includes(bookID)) {
+        faIcon.classList.add('fa-bookmark');
+    } else if(alreadyReadBookIds.includes(bookID)) {
+        faIcon.classList.add('fa-star');
+    }
+}
+
 //add book to Waiting List
 let addToWaitingListBtns = document.getElementsByClassName("add-to-waiting-list"); 
 for (var i = 0; i < addToWaitingListBtns.length; i++) {
     addToWaitingListBtns[i].addEventListener('click', function() {
         console.log(this.dataset.bookID);
-        addToWaitingList(this.dataset.bookId);
+        addToWaitingList(Number(this.dataset.bookId));
     });
 }
 
@@ -152,8 +168,8 @@ for (var i = 0; i < addToWaitingListBtns.length; i++) {
 let addToAlreadyReadBtns = document.getElementsByClassName("add-to-already-read");
 for (var i = 0; i < addToAlreadyReadBtns.length; i++) {
     addToAlreadyReadBtns[i].addEventListener('click', function() {
-        console.log(this.dataset.bookID);
-        addToAlreadyRead(this.dataset.bookId);
+        console.log(this.dataset.bookId);
+        addToAlreadyRead(Number(this.dataset.bookId));
     });
 }
 
@@ -166,5 +182,3 @@ $(".description-full__show-more").click(function () {
     }
     $(".description-full__text").toggleClass("description-full--show-more-height");
 });
-
-

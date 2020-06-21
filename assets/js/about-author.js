@@ -3,7 +3,6 @@ var url_string = window.location.href; //window.location.href
 var url = new URL(url_string);
 var authorID = getNumberParameterFromUrlByKey("authorID");
 
-
 //if authorID is indefined
 if (authorID != null) {
     let thisAuthor = getAuthorById(authorID);

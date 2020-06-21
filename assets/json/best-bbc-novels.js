@@ -1,1 +1,1 @@
-let bestBbcNovelsIDs = [0, 1, 2, 3, 4, 5, 6];
+let bestBbcNovelsIDs = [12, 13, 4, 2, 0, 3, 6, 23, 25];

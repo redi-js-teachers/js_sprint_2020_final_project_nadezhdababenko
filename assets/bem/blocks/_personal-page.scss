@@ -91,4 +91,11 @@
             margin-bottom: 0px;
         }
     }
+    &__book-card {
+        margin-bottom: 18px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
 }

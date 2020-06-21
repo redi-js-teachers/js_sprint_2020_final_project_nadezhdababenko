@@ -1,76 +1,73 @@
+const settingsBtn = document.getElementById('open-settings');
+let showReaderSettingsWindow = localStorage.getItem(showReaderSettingsWindowKey);
+showReaderSettingsWindow = showReaderSettingsWindow === 'true';
 
 //open pop-up additional info
 (() => {
-	const block = document.querySelector('#additionally');
-	const button = document.querySelector('#open-additionally');
-	
-	function toggle() {
-	  block.classList.toggle('reader-header--visible');
-	}
-	function remove() {
-	  block.classList.remove('reader-header--visible');
-	}
-	
 	document.addEventListener('click', e => {
+	  const block = document.getElementById('additionally');
+	  const button = document.getElementById('open-additionally');
 	  const target = e.target;
-	  
-	  target === button ? toggle() : target !== block ? remove() : false;
+	  if (target === button) {
+		  console.log(block);
+		toggle(block, 'reader-header--visible');
+	  } else {
+		remove(block, 'reader-header--visible');
+	  }
 	});
   })();
+
 //open pop-up settings
   (() => {
-	const block = document.querySelector('#settings');
-	const button = document.querySelector('#open-settings');
-	
-	function toggle() {
-	  block.classList.toggle('reader-header--visible');
-	}
-	function remove() {
-	  block.classList.remove('reader-header--visible');
-	}
-
 	document.addEventListener('click', e => {
+	  const block = document.getElementById('settings');
+	  const button = document.getElementById('open-settings');
 	  const target = e.target;
-	  if(target === button) {
-		toggle();
-		console.log('odin');
-	  } else if(target == block) {
-		console.log('dva'); //does't work ...
-	  } else if(target !== block) {
-		remove();
-		console.log('tri');
+	  if (target === button) {
+		toggle(block, 'reader-header--visible');
+		localStorage.setItem(showReaderSettingsWindowKey, true);
+	  } else {
+		localStorage.setItem(showReaderSettingsWindowKey, false);
+		remove(block, 'reader-header--visible');
 	  } 
 	});
   })();
+
 //open pop-up quote
   (() => {
-	const block = document.querySelector('#quote');
-	const button = document.querySelector('#open-quote');
-	const buttonClose = document.querySelector('#quote-close');
-	
-	function toggle() {
-	  block.classList.toggle('overlay--visible');
-	}
-	function remove() {
-	  block.classList.remove('overlay--visible');
-	}
-	
 	document.addEventListener('click', e => {
+	  const block = document.getElementById('quote');
+	  const button = document.getElementById('open-quote');
 	  const target = e.target;
-	  if(target === button) {
-		toggle();
-	  } else if(target === block) {
-		remove();
+	  if (target === button) {
+		toggle(block, 'overlay--visible');
+	  } else if (target === block) {
+		remove(block, 'overlay--visible');
 	  } 
 	});
+	
+	const buttonClose = document.getElementById('quote-close');
 	buttonClose.addEventListener('click', function() {
 		block.classList.remove('overlay--visible');
 	})
   })();
 
+function toggle(block, className) {
+	block.classList.toggle(className);
+}
+function remove(block, className) {
+	block.classList.remove(className);
+}
+
+if (showReaderSettingsWindow === true) {
+	const block = document.getElementById('settings');
+	toggle(block, 'reader-header--visible');
+} 
+
 //change settings -> blocks
 let readerPage = document.getElementById('reader-page');//main block contents header/reader/footer(should change theme)
 let readerBook = document.getElementById('reader-book');//book's div with text(changes from #reader-page)
+
 //change settings -> buttons
 let textBigger = document.getElementById('text-bigger');
 let textSmaller = document.getElementById('text-smaller');
@@ -209,7 +206,6 @@ styleGillSans.addEventListener('click', function() {
 	localStorage.setItem(fontFamilyActiveIdKey,  this.id);
 	location.reload();
 });
-
 
 //Full screen function
 let fullScreen = document.getElementById('full-screen');

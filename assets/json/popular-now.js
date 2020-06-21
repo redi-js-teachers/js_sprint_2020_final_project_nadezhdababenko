@@ -1,1 +1,1 @@
-let popularNowIDs = [0, 1, 2, 3, 4, 5, 6];
+let popularNowIDs = [11, 3, 2, 18, 14, 21, 0];

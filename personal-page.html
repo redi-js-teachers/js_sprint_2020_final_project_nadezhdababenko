@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/styles.css">
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -38,20 +37,6 @@
         <!-- recent-books row -->
         <div class="personal-page__recent-books" id="recent-books">
             <!-- RECENT BOOKS -->
-
-            <!-- <div class="book book--84 personal-page__recent-book">
-                <div class="book-progress book__progress">
-                    <i class="book-progress__status-icon fa fa-star-half"></i>
-                    <div class="book-progress__amount">
-                        1%
-                    </div>
-                </div>
-                <div class="book__cover">
-                    <a class="book__cover-link" href="#">
-                        <img class="book__cover-img" src="assets/images/books/AJournalofthePlagueYearbyDanielDefoe.jpg" alt="A Journal of the Plague Year">
-                    </a>
-                </div>
-            </div> -->
         </div>
         <div class="spacer spacer--36"></div>
 
@@ -75,14 +60,14 @@
         <!-- main header personal page -->
         <div class="personal-page__header nav nav-pills mb-3" id="pills-tab" role="tablist">
             <div class="personal-page-item personal-page__header-item nav-link active" id="pills-books-tab" data-toggle="pill" href="#pills-books" role="tab" aria-controls="pills-books" aria-selected="true">
-                <div class="personal-page-item__amount">
-                    1
+                <div class="personal-page-item__amount" id="books-amount">
+                    
                 </div>
                 <div class="personal-page-item__title">
                     My books
                 </div>
             </div>
-            <div class="personal-page-item personal-page-item--empty personal-page__header-item nav-link" id="pills-list-tab" data-toggle="pill" href="#pills-list" role="tab" aria-controls="pills-list" aria-selected="false">
+            <div class="personal-page-item personal-page__header-item nav-link" id="pills-list-tab" data-toggle="pill" href="#pills-list" role="tab" aria-controls="pills-list" aria-selected="false">
                 <div class="personal-page-item__amount">
                     0
                 </div>
@@ -92,7 +77,7 @@
             </div>
             <div class="personal-page-item personal-page__header-item nav-link" id="pills-reviews-tab" data-toggle="pill" href="#pills-reviews" role="tab" aria-controls="pills-reviews" aria-selected="false">
                 <div class="personal-page-item__amount">
-                    1
+                    0
                 </div>
                 <div class="personal-page-item__title">
                     My reviews
@@ -100,7 +85,7 @@
             </div>
             <div class="personal-page-item personal-page__header-item nav-link" id="pills-quotes-tab" data-toggle="pill" href="#pills-quotes" role="tab" aria-controls="pills-quotes" aria-selected="false">
                 <div class="personal-page-item__amount">
-                    1
+                    0
                 </div>
                 <div class="personal-page-item__title">
                     My quotes
@@ -108,7 +93,7 @@
             </div>
             <div class="personal-page-item personal-page__header-item nav-link" id="pills-friends-tab" data-toggle="pill" href="#pills-friends" role="tab" aria-controls="pills-friends" aria-selected="false">
                 <div class="personal-page-item__amount">
-                    1
+                    0
                 </div>
                 <div class="personal-page-item__title">
                     My friends
@@ -288,9 +273,6 @@
         </div>
     </div>
 
-
-
-   
     <footer class="footer container-fluid">
         <div class="footer__content container">
             <div class="footer__row row">
@@ -334,10 +316,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -345,10 +323,8 @@
 <script src="assets/json/allBooks.js"></script>
 <script src="assets/json/authors.js"></script>
 
-
 <script src="assets/js/local-storage-keys.js"></script>
 <script src="assets/js/script-personal-page.js"></script>
-
 </body>
 </html>
 

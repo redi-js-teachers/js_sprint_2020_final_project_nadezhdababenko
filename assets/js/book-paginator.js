@@ -9,9 +9,7 @@ let chunks = []; // peaces of text(either single words or tags)
 let splittedPages = []; // an array storing the index of the first and last chunk to display on the page
 
 document.addEventListener('DOMContentLoaded', initialize());
-
 window.addEventListener('load', function() {
-        
         if (bookID != null) {
             var script = document.createElement('script');
             script.onload = function () {
@@ -31,13 +29,9 @@ window.addEventListener('load', function() {
     false
 );
 
-
-
 function createBookTitle(book) {
 	let bookTitle = document.querySelector('#book-title');
-	bookTitle.innerHTML = `
-		${book.title}
-	`
+	bookTitle.innerHTML = book.title;
 }
 
 function initialize() { //sets initial configurations for bookField
@@ -45,6 +39,11 @@ function initialize() { //sets initial configurations for bookField
     bookField.style.textAlign = localStorage.getItem(textAlignmentKey);
     bookField.style.lineHeight = localStorage.getItem(lineSpasingKey);
     bookField.style.fontFamily = localStorage.getItem(fontFamilyKey);
+
+    calcField.style.fontSize = localStorage.getItem(fontSizeKey) +'px';
+    calcField.style.textAlign = localStorage.getItem(textAlignmentKey);
+    calcField.style.lineHeight = localStorage.getItem(lineSpasingKey);
+    calcField.style.fontFamily = localStorage.getItem(fontFamilyKey);
 
     let currentFontFamilyActiveId = localStorage.getItem(fontFamilyActiveIdKey);
     document.getElementById(currentFontFamilyActiveId).classList.add('reader-settings__style--active');
@@ -89,9 +88,7 @@ function splitToPages() {
 }
 
 function splitToPage(chunkIndex) {
-
     while (chunkIndex < chunks.length) {
-
         if (chunks[chunkIndex].includes('<') || chunks[chunkIndex].includes('>')) {
 			calcField.insertAdjacentHTML('beforeend', chunks[chunkIndex] + '<div class="spacer spacer--6"></div>');
         } 
@@ -111,7 +108,6 @@ function splitToPage(chunkIndex) {
 }
 
 function drawPage(pageIndex) {
-    
     let pageChunksIndexes = splittedPages[pageIndex];
     let chunkStartIndex = pageChunksIndexes[0];
     let chunkEndIndex = pageChunksIndexes[1];
@@ -155,7 +151,6 @@ function nextPage() {
 
 function prevPage() {
     let currentPage = localStorage.getItem(pageNumberKey);
-
     if (currentPage > 0) {
         bookField.innerHTML = "";
         currentPage--;
@@ -170,6 +165,3 @@ function prevPage() {
         next.classList.remove('reader-page__next-btn--last-page');
     }
 }
-
-
-
