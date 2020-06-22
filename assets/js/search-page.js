@@ -138,3 +138,21 @@ function createSearchedBook(book) {
     `
     searchPageList.appendChild(bookItem);
 }
+
+//add book to Waiting List
+let addToWaitingListBtns = document.getElementsByClassName("add-to-waiting-list"); 
+for (var i = 0; i < addToWaitingListBtns.length; i++) {
+    addToWaitingListBtns[i].addEventListener('click', function() {
+        console.log(this.dataset.bookID);
+        addToWaitingList(this.dataset.bookId);
+    });
+}
+
+//add book to Already Read
+let addToAlreadyReadBtns = document.getElementsByClassName("add-to-already-read");
+for (var i = 0; i < addToAlreadyReadBtns.length; i++) {
+    addToAlreadyReadBtns[i].addEventListener('click', function() {
+        console.log(this.dataset.bookID);
+        addToAlreadyRead(this.dataset.bookId);
+    });
+}

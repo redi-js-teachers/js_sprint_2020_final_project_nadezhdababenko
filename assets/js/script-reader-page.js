@@ -1,56 +1,48 @@
-const settingsBtn = document.getElementById('open-settings');
+let additionallyBlock = document.getElementById('additionally');
+let additionallyButton = document.getElementById('open-additionally');
+let settingsBlock = document.getElementById('settings');
+let settingsButton = document.getElementById('open-settings');
+let quoteBlock = document.getElementById('quote');
+let quoteButton = document.getElementById('open-quote');
+
 let showReaderSettingsWindow = localStorage.getItem(showReaderSettingsWindowKey);
 showReaderSettingsWindow = showReaderSettingsWindow === 'true';
 
-//open pop-up additional info
+// common
 (() => {
 	document.addEventListener('click', e => {
-	  const block = document.getElementById('additionally');
-	  const button = document.getElementById('open-additionally');
-	  const target = e.target;
-	  if (target === button) {
-		  console.log(block);
-		toggle(block, 'reader-header--visible');
+	  let target = e.target;
+	  if (target === additionallyButton) {
+		toggle(additionallyBlock, 'reader-header--visible');
 	  } else {
-		remove(block, 'reader-header--visible');
+		remove(additionallyBlock, 'reader-header--visible');
+	  }
+
+	  let elt = target.closest('#settings'); 
+	  if(elt !== null) {
+		return;
+	  }
+
+	  if (target === settingsButton) {
+		toggle(settingsBlock, 'reader-header--visible');
+		localStorage.setItem(showReaderSettingsWindowKey, true);
+	  } else {
+		localStorage.setItem(showReaderSettingsWindowKey, false);
+		remove(settingsBlock, 'reader-header--visible');
+	  }
+
+	  if (target === quoteButton) {
+		toggle(quoteBlock, 'overlay--visible');
+	  } else if (target === quoteBlock) {
+		remove(quoteBlock, 'overlay--visible');
 	  }
 	});
   })();
 
-//open pop-up settings
-  (() => {
-	document.addEventListener('click', e => {
-	  const block = document.getElementById('settings');
-	  const button = document.getElementById('open-settings');
-	  const target = e.target;
-	  if (target === button) {
-		toggle(block, 'reader-header--visible');
-		localStorage.setItem(showReaderSettingsWindowKey, true);
-	  } else {
-		localStorage.setItem(showReaderSettingsWindowKey, false);
-		remove(block, 'reader-header--visible');
-	  } 
-	});
-  })();
-
-//open pop-up quote
-  (() => {
-	document.addEventListener('click', e => {
-	  const block = document.getElementById('quote');
-	  const button = document.getElementById('open-quote');
-	  const target = e.target;
-	  if (target === button) {
-		toggle(block, 'overlay--visible');
-	  } else if (target === block) {
-		remove(block, 'overlay--visible');
-	  } 
-	});
-	
-	const buttonClose = document.getElementById('quote-close');
-	buttonClose.addEventListener('click', function() {
-		block.classList.remove('overlay--visible');
-	})
-  })();
+let buttonClose = document.getElementById('quote-close');
+buttonClose.addEventListener('click', function() {
+	quoteBlock.classList.remove('overlay--visible');
+});
 
 function toggle(block, className) {
 	block.classList.toggle(className);
@@ -63,6 +55,7 @@ if (showReaderSettingsWindow === true) {
 	const block = document.getElementById('settings');
 	toggle(block, 'reader-header--visible');
 } 
+
 
 //change settings -> blocks
 let readerPage = document.getElementById('reader-page');//main block contents header/reader/footer(should change theme)
@@ -90,45 +83,40 @@ let styleGillSans = document.getElementById('style-gill-sans');
 
 //1.1 text - bigger
 textBigger.addEventListener('click', function() {
+	console.log('dsf');
 	let localFontSize = localStorage.getItem(fontSizeKey);
 	localStorage.setItem(fontSizeKey, Number(localFontSize) + 2);
 	location.reload();
-	// readerPage.classList.add("reader-page--font-size-18");
 });
 //1.2 text - smaller
 textSmaller.addEventListener('click', function() {
 	let localFontSize = localStorage.getItem(fontSizeKey);
 	localStorage.setItem(fontSizeKey, Number(localFontSize) - 2);
 	location.reload();
-	// readerPage.classList.remove("reader-page--font-size-18");
 });
 //2.1 text alignment - bigger
 alignmentLeft.addEventListener('click', function() {
 	let LocalTextAlignment = localStorage.getItem(textAlignmentKey);
 	localStorage.setItem(textAlignmentKey, 'left');
 	location.reload();
-	// readerPage.classList.remove("reader-page--text-alignment-justify");
 });
 //2.2 text alignment - smaller
 alignmentJustify.addEventListener('click', function() {
 	let LocalTextAlignment = localStorage.getItem(textAlignmentKey);
 	localStorage.setItem(textAlignmentKey, 'justify');
 	location.reload();
-	// readerPage.classList.add("reader-page--text-alignment-justify");
 });
 //3.1 line spasing - bigger
 lineSpacing16.addEventListener('click', function() {
 	let LocallineSpasing = localStorage.getItem(lineSpasingKey);
 	localStorage.setItem(lineSpasingKey,  Number(LocallineSpasing) + 0.2);
 	location.reload();
-	// readerPage.classList.add("reader-page--line-height-16");
 });
 //3.2 line spasing - smaller
 lineSpacing14.addEventListener('click', function() {
 	let LocallineSpasing = localStorage.getItem(lineSpasingKey);
 	localStorage.setItem(lineSpasingKey,  Number(LocallineSpasing) - 0.2);
 	location.reload();
-	// readerPage.classList.remove("reader-page--line-height-16");
 });
 //4.1 white-theme
 whiteTheme.addEventListener('click', function() {
