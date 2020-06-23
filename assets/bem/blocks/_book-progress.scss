@@ -1,0 +1,14 @@
+.book-progress {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: $grey-text;
+    
+    &__status-icon {
+        margin-right: 6px;
+    }
+    &__amount {
+        font-size: 10px;
+        font-weight: 100;
+    }
+}

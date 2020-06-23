@@ -1,0 +1,82 @@
+.book-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 4px;
+    padding: 8px 16px;
+    // box-shadow: 0 1px 0 0 #ddd6cf;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.16), 0 0 0 1px rgba(0,0,0,.08);
+    &__content {
+        display: flex;
+    }
+    &__cover-img {
+        width: 84px;
+        height: 124px;
+    }
+    &__description {
+        margin: auto 0;
+        padding-left: 16px;
+    }
+    &__title {
+        max-width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        line-height: 1;
+        margin: 0;
+        max-height: 18.6px;
+        color: $black;  
+    }
+    &__title-link {
+        color: $black;
+        font-weight: 500;
+        font-size: 15px;
+        max-height: 40px;
+        overflow-y: hidden;
+        line-height: 1;
+        &:hover {
+            color: $dark-blue;
+        }
+    }
+    &__author {
+        max-width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        line-height: 20px;
+        margin: 0;
+        max-height: 18.2px;
+        color: $yellow;
+    }
+    &__author-link {
+        font-size: 14px;
+        font-weight: 300;
+        color: $orange;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__actions {
+        margin: auto 0;
+    }
+    &__action {
+        margin-bottom: 8px;
+    }
+    &__action:last-child {
+        margin-bottom: 0;
+    }
+    &__action {
+        width: 100%;
+    }
+    &__progress {
+        margin-bottom: 8px;
+    }
+
+    &__action-more {
+        margin: auto 0;
+    }
+    &__action-more .dropdown-btn__btn {
+        padding: 10px 18px;
+    }
+}

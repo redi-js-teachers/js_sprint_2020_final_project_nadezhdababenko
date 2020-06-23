@@ -1,0 +1,35 @@
+.personal-activity {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 4px 8px;
+    border: 1px solid $dark-blue;
+    border-radius: 4px;
+    background-color: $dark-blue;
+    color: $white;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid $blue-green;
+        background-color: $blue-green;
+        text-decoration: none;
+        color: $dark-blue;
+    }
+    &__icon {
+        margin-right: 12px;
+    }
+    &__title {
+        font-weight: 100;
+        font-size: 14px;
+    }
+    // &--transparent {
+    //     background-color: transparent;
+    //     color: $dark-blue;
+    //     height: 100%;
+    //     &:hover {
+    //         color: $blue-green;
+    //         background-color: transparent;
+    //         border: 1px solid $blue-green;
+    //     }
+    // }
+}

@@ -1,0 +1,1 @@
+let biographiesIDs = [3, 25, 12, 4, 22, 16, 8, 18];

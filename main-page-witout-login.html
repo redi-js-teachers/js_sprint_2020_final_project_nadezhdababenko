@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/styles.css">
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -20,12 +19,85 @@
             </button>
             <div class="main-navbar__collapse collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="main-navbar__nav navbar-nav">
-                    <a class="main-navbar__item nav-item nav-link" href="#">Library <span class="sr-only">(current)</span></a>
-                    <a class="main-navbar__item nav-item nav-link" href="#">Search</a>
-                    <a class="main-navbar__item nav-item nav-link" href="#">Log in</a>
+                    <a class="main-navbar__item nav-item nav-link" href="library.html">Library <span class="sr-only">(current)</span></a>
+                    <a class="main-navbar__item nav-item nav-link" href="search-page.html">Search</a>
+                    <a class="main-navbar__item nav-item nav-link" href="#" id="log-in-btn">Log in</a>
+                    <a class="main-navbar__item nav-item nav-link" href="personal-page.html" id="log-in-btn">My books</a>
                 </div>
             </div>
         </nav>
+    </div>
+
+    <div class="overlay" id="log-in-pop-up">
+        <div class="pop-up" >
+            <form class="pop-up__form">
+                <div class="pop-up__header">
+                    Sign in or Register
+                </div>
+                <div class="pop-up__providers">
+                    <div class="pop-up__providers-button-block">
+                        <button class="pop-up__providers-button" type="submit">
+                            <i class="pop-up__icon fa fa-facebook-square fa-2x"></i>
+                            <div class="pop-up__button-title">
+                                Facebook
+                            </div>
+                        </button>
+                    </div>
+                    <div class="pop-up__providers-button-block">
+                        <button class="pop-up__providers-button" type="submit">
+                            <i class="pop-up__icon fa fa-twitter-square fa-2x"></i>
+                            <div class="pop-up__button-title">
+                                Twitter
+                            </div>
+                        </button>
+                    </div>
+                    <div class="pop-up__providers-button-block">
+                        <button class="pop-up__providers-button" type="submit">
+                            <i class="pop-up__icon fa fa-vk fa-2x"></i>
+                            <div class="pop-up__button-title">
+                                VK
+                            </div>
+                        </button>
+                    </div>
+                    <div class="pop-up__providers-button-block">
+                        <button class="pop-up__providers-button" type="submit">
+                            <i class="pop-up__icon fa fa-google fa-2x"></i>
+                            <div class="pop-up__button-title">
+                                Google
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="pop-up__email-block">
+                    <a class="pop-up__email" href="#" id="log-in-email">
+                         Use email
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="overlay" id="log-in-email-pop-up">
+        <div class="pop-up" >
+            <form class="pop-up__form">
+                <div class="pop-up__header">
+                    Sign in or Register
+                </div>
+                <button class="pop-up__back-btn" id="back-to-main-log-in">
+                    <i class="fa fa-angle-left fa-2x"></i>
+                </button>
+                <div class="pop-up__content-block">
+                    <input class="pop-up__input" type="text" placeholder="Email">
+                    <input class="pop-up__input" type="text" placeholder="Password">
+                    <button class="pop-up__join-btn">
+                        Join
+                    </button>
+                    <button class="pop-up__forgot-btn">
+                        Forgot password?
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <div class="intro">
@@ -77,7 +149,6 @@
             <div class="list__body" id="bestsellers-start-page">
                 <!-- bestsellers row -->
             </div>
-
         </div>
     </div>
 
@@ -86,7 +157,6 @@
         <div class="sections__title">
             Let's imagine you're already one of us .. What can BookLover offer you?
         </div>
-
         <section class="sections__item section container">
             <div class="section__wrapper section__wrapper--mobile row w-100 justify-content-center m-0">
                 <div class="section__content-block col-md-6">
@@ -160,8 +230,6 @@
                 </div>
             </section>
         </div>
-
-
 
         <section class="sections__item section container">
             <div class="section__wrapper section__wrapper--mobile row w-100 justify-content-center m-0">
@@ -281,15 +349,14 @@
             </div>
         </div>
     </footer>
-
-
-
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/json/allBooks.js"></script> 
+<script src="assets/json/authors.js"></script> 
 <script src="assets/json/bestsellers.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/script-main-page.js"></script>
 </body>
 </html>
 

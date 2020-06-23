@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Booklover</title>
+</head>
+<body>
+    <div class="header">
+        <nav class="header__navbar main-navbar navbar navbar-expand-lg">
+            <a class="main-navbar__brand navbar-brand" href="main-page-witout-login.html">
+                <img class="main-navbar__img" src="assets/images/logos/logo-md-no-bg.png" alt="">
+            </a>
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="main-navbar__collapse collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="main-navbar__nav navbar-nav">
+                    <a class="main-navbar__item nav-item nav-link" href="library.html">Library <span class="sr-only">(current)</span></a>
+                    <a class="main-navbar__item nav-item nav-link" href="search-page.html">Search</a>
+                    <a class="main-navbar__item nav-item nav-link" href="#" id="log-in-btn">Log in</a>
+                    <a class="main-navbar__item nav-item nav-link" href="personal-page.html" id="log-in-btn">My books</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="spacer spacer--36"></div>
+    <!-- personal-page -->
+    <div class="personal-page">
+        <div class="personal-page__recent-books-title">
+            Recent open books
+        </div>
+        <!-- recent-books row -->
+        <div class="personal-page__recent-books" id="recent-books">
+            <!-- RECENT BOOKS -->
+        </div>
+        <div class="spacer spacer--36"></div>
+
+        <!-- activities -->
+        <div class="personal-page__activities">
+            <button class="personal-activity">
+                <i class="personal-activity__icon fa fa-book"></i>
+                <div class="personal-activity__title">
+                    Create a new book list
+                </div>
+            </button>
+            <button class="personal-activity">
+                <i class="personal-activity__icon fa fa-star"></i>
+                <div class="personal-activity__title">
+                    My statistics
+                </div>
+            </button>
+        </div>
+
+        <div class="spacer spacer--36"></div>
+        <!-- main header personal page -->
+        <div class="personal-page__header nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <div class="personal-page-item personal-page__header-item nav-link active" id="pills-books-tab" data-toggle="pill" href="#pills-books" role="tab" aria-controls="pills-books" aria-selected="true">
+                <div class="personal-page-item__amount" id="books-amount">
+                    
+                </div>
+                <div class="personal-page-item__title">
+                    My books
+                </div>
+            </div>
+            <div class="personal-page-item personal-page__header-item nav-link" id="pills-list-tab" data-toggle="pill" href="#pills-list" role="tab" aria-controls="pills-list" aria-selected="false">
+                <div class="personal-page-item__amount">
+                    0
+                </div>
+                <div class="personal-page-item__title">
+                    My lists
+                </div>
+            </div>
+            <div class="personal-page-item personal-page__header-item nav-link" id="pills-reviews-tab" data-toggle="pill" href="#pills-reviews" role="tab" aria-controls="pills-reviews" aria-selected="false">
+                <div class="personal-page-item__amount">
+                    0
+                </div>
+                <div class="personal-page-item__title">
+                    My reviews
+                </div>
+            </div>
+            <div class="personal-page-item personal-page__header-item nav-link" id="pills-quotes-tab" data-toggle="pill" href="#pills-quotes" role="tab" aria-controls="pills-quotes" aria-selected="false">
+                <div class="personal-page-item__amount">
+                    0
+                </div>
+                <div class="personal-page-item__title">
+                    My quotes
+                </div>
+            </div>
+            <div class="personal-page-item personal-page__header-item nav-link" id="pills-friends-tab" data-toggle="pill" href="#pills-friends" role="tab" aria-controls="pills-friends" aria-selected="false">
+                <div class="personal-page-item__amount">
+                    0
+                </div>
+                <div class="personal-page-item__title">
+                    My friends
+                </div>
+            </div>
+        </div>
+        <!-- CONTENT -->
+        <div class="personal-page__content-block tab-content" id="pills-tabContent">
+        <!-- CONTENT -- BOOKS -->
+            <div class="personal-page__content-wrapper container-fluid tab-pane fade show active" id="pills-books" role="tabpanel" aria-labelledby="pills-books-tab">
+                <div class="personal-page__content-wrapper2 container">
+                    <!-- BOOKS -- ROW -->
+                    <div class="personal-page__content row">
+                        <!-- BOOKS -- MENU -->
+                        <div class="personal-page__content-menu col-md-3 nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="personal-page__content-menu-item active" id="v-pills-started-tab" data-toggle="pill" href="#v-pills-started" role="tab" aria-controls="v-pills-started" aria-selected="true">
+                                <i class="personal-page__menu-icon fa fa-star-half fa-lg"></i>
+                                <div class="personal-page__menu-title">
+                                    Started
+                                </div>
+                            </a>
+                            <a class="personal-page__content-menu-item" id="v-pills-finished-tab" data-toggle="pill" href="#v-pills-finished" role="tab" aria-controls="v-pills-finished" aria-selected="false">
+                                <i class="personal-page__menu-icon fa fa-star fa-lg"></i>
+                                <div class="personal-page__menu-title">
+                                    Finished
+                                </div>
+                            </a>
+                            <a class="personal-page__content-menu-item" id="v-pills-waiting-tab" data-toggle="pill" href="#v-pills-waiting" role="tab" aria-controls="v-pills-waiting" aria-selected="false">
+                                <i class="personal-page__menu-icon fa fa-bookmark fa-lg"></i>
+                                <div class="personal-page__menu-title">
+                                    Waiting list
+                                </div>
+                            </a>
+                        </div>
+                        <!-- BOOKS -- MENU TABS -->
+                        <div class="tab-content col-md-9" id="v-pills-tabContent">
+                              <!-- BOOKS -- MENU TAB -->
+                            <div class="tab-pane fade show active" id="v-pills-started" role="tabpanel" aria-labelledby="v-pills-started-tab">
+                                <div class="personal-page__content-list">
+                                    <div class="personal-page__content-title">
+                                        Started
+                                    </div>
+                                    <div class="spacer spacer--6"></div>
+                                    <div class="personal-page__book-list" id="started-list-books">
+                                        <!-- STERTED LIST -> BOOK CARDS LIST -->
+                                    </div>
+                                </div>
+                            </div>
+                              <!-- BOOKS -- MENU TAB -->
+                            <div class="tab-pane fade" id="v-pills-finished" role="tabpanel" aria-labelledby="v-pills-finished-tab">
+                                <div class="personal-page__content-list">
+                                    <div class="personal-page__content-title">
+                                        Finished
+                                    </div>
+                                    <div class="spacer spacer--6"></div>
+
+                                    <div class="personal-page__book-list" id="finished-list-books">
+                                        <!-- FINISHED LIST -> BOOK CARDS LIST -->
+                                    </div>
+                                </div>
+                            </div>
+                              <!-- BOOKS -- MENU TAB -->
+                            <div class="tab-pane fade" id="v-pills-waiting" role="tabpanel" aria-labelledby="v-pills-waiting-tab">
+                                <div class="personal-page__content-list">
+                                    <div class="personal-page__content-title">
+                                        Waiting list
+                                    </div>
+                                    <div class="spacer spacer--6"></div>
+
+                                    <div class="personal-page__book-list" id="waiting-list-books">
+                                        <!-- WAITING_LIST -> BOOK CARDS LIST -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- CONTENT -- LISTS -->
+            <div class="personal-page__content-wrapper container-fluid tab-pane fade" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab">
+                <div class="personal-page__content-wrapper2 container">
+                    <div class="personal-page__content row">
+                        <!-- LISTS -- MENU -->
+                        <div class="personal-page__content-menu col-md-3 nav flex-column nav-pills" id="v-pills-tab1" role="tablist" aria-orientation="vertical">
+                            <a class="personal-page__content-menu-item active" id="v-pills-my-list-tab" data-toggle="pill" href="#v-pills-my-list" role="tab" aria-controls="v-pills-my-list" aria-selected="true">
+                                <i class="personal-page__menu-icon fa fa-user fa-lg"></i>
+                                <div class="personal-page__menu-title">
+                                    My lists
+                                </div>
+                            </a>
+                            <a class="personal-page__content-menu-item" id="v-pills-friend-list-tab" data-toggle="pill" href="#v-pills-friend-list" role="tab" aria-controls="v-pills-friend-list" aria-selected="false">
+                                <i class="personal-page__menu-icon fa fa-users fa-lg"></i>
+                                <div class="personal-page__menu-title">
+                                    Friend's lists
+                                </div>
+                            </a>
+                        </div>
+                        <!-- LISTS -- MENU TABS -->
+                        <div class="tab-content col-md-9" id="v-pills-tabContent1">
+                            <!-- LISTS -- MENU TAB -->
+                            <div class="tab-pane fade show active" id="v-pills-my-list" role="tabpanel" aria-labelledby="v-pills-my-list-tab">
+                                <div class="personal-page__content-list">
+                                    <div class="personal-page__content-title">
+                                        My lists
+                                    </div>
+                                    <div class="spacer spacer--6"></div>
+                                </div>
+                            </div>
+                            <!-- LISTS -- MENU TAB -->
+                            <div class="tab-pane fade" id="v-pills-friend-list" role="tabpanel" aria-labelledby="v-pills-friend-list-tab">
+                                <div class="personal-page__content-list">
+                                    <div class="personal-page__content-title">
+                                        Friend's lists
+                                    </div>
+                                    <div class="spacer spacer--6"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- CONTENT -- REVIUEWS -->
+            <div class="personal-page__content-wrapper container-fluid tab-pane fade" id="pills-reviews" role="tabpanel" aria-labelledby="pills-reviews-tab">
+                <div class="personal-page__content-wrapper2 container">
+                    <div class="personal-page__content row">
+                        <div class="personal-page__content-menu col-md-3">
+                            <a href="" class="personal-page__content-menu-item active">
+                                <i class="personal-page__menu-icon fa fa-bullhorn fa-lg"></i>
+                                <div class="personal-page__menu-title">
+                                    My reviews
+                                </div>
+                            </a>
+                        </div>
+                        <div class="personal-page__content-list col-md-9">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CONTENT -- QUOTES -->
+            <div class="personal-page__content-wrapper container-fluid tab-pane fade" id="pills-quotes" role="tabpanel" aria-labelledby="pills-quotes-tab">
+                <div class="personal-page__content-wrapper2 container">
+                    <div class="personal-page__content row">
+                        <div class="personal-page__content-menu col-md-3">
+                            <a href="" class="personal-page__content-menu-item active">
+                                <i class="personal-page__menu-icon fa fa-quote-right fa-lg"></i>
+                                <div class="personal-page__menu-title">
+                                    My quotes
+                                </div>
+                            </a>
+                        </div>
+                        <div class="personal-page__content-list col-md-9">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CONTENT -- FRIENDS -->
+            <div class="personal-page__content-wrapper container-fluid tab-pane fade" id="pills-friends" role="tabpanel" aria-labelledby="pills-friends-tab">
+                <div class="personal-page__content-wrapper2 container">
+                    <div class="personal-page__content row">
+                        <div class="personal-page__content-menu col-md-3">
+                            <a href="" class="personal-page__content-menu-item active">
+                                <i class="personal-page__menu-icon fa fa-users fa-lg"></i>
+                                <div class="personal-page__menu-title">
+                                    My friends
+                                </div>
+                            </a>
+                        </div>
+                        <div class="personal-page__content-list col-md-9">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer container-fluid">
+        <div class="footer__content container">
+            <div class="footer__row row">
+                <div class="footer__social col-lg-4 col-sm-12">
+                    <a href="#" class="footer__social-icon social-network">
+                        <i class="social-network__icon fa fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="#" class="footer__social-icon social-network">
+                        <i class="social-network__icon fa fa-facebook-f fa-2x"></i>
+                    </a>
+                    <a href="#" class="footer__social-icon social-network">
+                        <i class="social-network__icon fa fa-vk fa-2x"></i>
+                    </a>
+                    <a href="#" class="footer__social-icon social-network">
+                        <i class="social-network__icon fa fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+                <div class="footer__stores col-lg-4 col-sm-12">
+                    <div class="social-btn social-btn--light">
+                        <a class="social-btn__link" href="#">
+                            <i class="social-btn__icon fa fa-apple fa-lg"></i>
+                            <div class="social-btn__text-block">
+                                <div class="social-btn__text">Get it on</div>
+                                <div class="social-btn__store">App Store</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social-btn social-btn--light">
+                        <a class="social-btn__link" href="#">
+                            <i class="social-btn__icon fa fa-google fa-lg"></i>
+                            <div class="social-btn__text-block">
+                                <div class="social-btn__text">Get it on</div>
+                                <div class="social-btn__store">Google Play</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__copyright col-lg-4 col-sm-12">
+                    © 2020, BookLover
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/json/allBooks.js"></script>
+<script src="assets/json/authors.js"></script>
+
+<script src="assets/js/local-storage-keys.js"></script>
+<script src="assets/js/script-personal-page.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+.category-page {
+    &__content {
+        margin: 0 auto;
+    }
+    &__title {
+        font-size: 22px;
+        font-weight: 600;
+        color: #ff830c;
+        padding-bottom: 24px;
+    }
+    &__book {
+        margin-bottom: 18px;
+    }
+    &__book:last-child {
+        margin-bottom: 0;
+    }
+    
+}

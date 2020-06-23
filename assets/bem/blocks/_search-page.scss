@@ -1,0 +1,51 @@
+.search-page {
+    
+    &__content {
+        margin: 0 auto;
+    }
+    &__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        padding: 16px 0 0;
+    }
+    &__item {
+        margin-right: 42px;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 100;
+        color: $blue-green;
+        cursor: pointer;
+        width: 50px;
+        text-align: center;
+        &:hover {
+            border-bottom: 1px solid $blue-green;
+            text-decoration: none;
+            color: $blue-green;
+        }
+        &--active {
+            font-weight: 400;
+            border-bottom: 1px solid $blue-green;
+            text-decoration: none;
+        }
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+    &__book {
+        margin-bottom: 18px;
+    }
+    &__book:last-child {
+        margin-bottom: 84px;
+    }
+    &__list-title,
+    &__list-amount {
+        line-height: 2.5;
+        font-size: 22px;
+        font-weight: 600;
+        color: $orange;
+    }
+    &__list-title {
+        margin-right: 12px;
+    }
+}

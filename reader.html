@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Booklover</title>
+</head>
+<body>
+    <div class="reader-page container-fluid" id="reader-page">
+        <div class="reader-header container">
+            <div class="reader-header__nav row">
+                <a href="main-page-witout-login.html" class="reader-header__a-back col-md-3 text-left">
+                    <i class="reader-header__back-icon fa fa-arrow-left"></i>
+                    <img class="reader-header__logo-img" src="assets/images/logos/logo-md-no-bg.png" alt="booklover">
+                </a>
+                <div class="reader-header__title col-md-6 text-center" id="book-title">
+                    
+                </div>
+                <div class="reader-header__settings col-md-3 text-right">
+                    <i class="reader-header__setting-icon fa fa-list-ol fa-lg" data-tooltip="Content"></i>
+                        <!-- pop-up-window -->
+
+                    <i class="reader-header__setting-icon fa fa-angellist fa-lg" data-tooltip="Quote" id="open-quote"></i>
+                        <!-- pop-up-window -->
+                        <div class="overlay" id="quote">
+                            <div class="reader-pop-up">
+                                <button class="reader-pop-up__close" id="quote-close">
+                                    <i class="fa fa-times fa-lg"></i>
+                                </button>
+                                <div class="reader-pop-up__content">
+                                    Your quotes from the book will be here
+                                </div>
+                            </div>
+                        </div>
+                    <i class="reader-header__setting-icon fa-lg fa fa-arrows-alt" data-tooltip="Full screen mode" id="full-screen"></i>
+                    <i class="reader-header__setting-icon fa fa-cogs fa-lg" data-tooltip="Settings" id="open-settings"></i>
+                        <!-- pop-up-window -->
+                    <div class="reader-header__setting-change reader-settings" id="settings">
+                        <div class="reader-settings__tail"></div>
+                        <div class="reader-settings__list">
+                            <div class="reader-settings__item">
+                                <div class="reader-settings__title">
+                                    Text size
+                                </div>
+                                <div class="reader-settings__options">
+                                    <i class="reader-settings__icon fa fa-minus fa-lg" id="text-smaller"></i>
+                                    <i class="reader-settings__icon fa fa-plus fa-lg" id="text-bigger"></i>
+                                </div>
+                            </div>
+                            <div class="reader-settings__item">
+                                <div class="reader-settings__title">
+                                    Text alignment
+                                </div>
+                                <div class="reader-settings__options">
+                                    <i class="reader-settings__icon fa fa-align-left fa-lg" id="alignment-left"></i>
+                                    <i class="reader-settings__icon fa fa-align-justify fa-lg" id="alignment-justify"></i>
+                                </div>
+                            </div>
+                            <div class="reader-settings__item">
+                                <div class="reader-settings__title">
+                                    Line spacing
+                                </div>
+                                <div class="reader-settings__options">
+                                    <i class="reader-settings__icon fa fa-arrow-down fa-lg" id="line-spacing-14"></i>
+                                    <i class="reader-settings__icon fa fa-arrow-up fa-lg" id="line-spacing-16"></i>
+                                </div>
+                            </div>
+                            <div class="reader-settings__item">
+                                <div class="reader-settings__color reader-settings__color--active" id="white-theme">
+                                    Aa
+                                </div>
+                                <div class="reader-settings__color" id="black-theme">
+                                    Aa
+                                </div>
+                                <div class="reader-settings__color" id="sepia-theme">
+                                    Aa
+                                </div>
+                                <div class="reader-settings__color" id="grey-theme">
+                                    Aa
+                                </div>
+                            </div>
+                            <div class="reader-settings__item">
+                                <div class="reader-settings__style" id="style-times">
+                                    Times
+                                </div>
+                                <div class="reader-settings__style" id="style-arial">
+                                    Arial
+                                </div>
+                                <div class="reader-settings__style" id="style-verdana">
+                                    Verdana
+                                </div>
+                                <div class="reader-settings__style" id="style-gill-sans">
+                                    Gill Sans
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="reader-header__setting-icon fa fa-ellipsis-h fa-lg" id="open-additionally" data-tooltip="Additionally"></i>
+                        <!-- pop-up-window -->
+                    <div class="reader-header__additionally reader-additionally" id="additionally">
+                        <div class="reader-additionally__tail"></div>
+                        <ul class="reader-additionally__list">
+                            <li class="reader-additionally__item">
+                                <a class="reader-additionally__link" href="#">
+                                    <i class="reader-additionally__icon fa fa-comment"></i>
+                                    Give feedback
+                                </a>
+                            </li>
+                            <li class="reader-additionally__item">
+                                <a class="reader-additionally__link" href="#">
+                                    <i class="reader-additionally__icon fa fa-plus-square"></i>
+                                    Add to the list
+                                </a>
+                            </li>
+                            <li class="reader-additionally__item">
+                                <a class="reader-additionally__link" href="#">
+                                    <i class="reader-additionally__icon fa fa-book"></i>
+                                    About the book
+                                </a>
+                            </li>
+                            <li class="reader-additionally__item">
+                                <a class="reader-additionally__link" href="#">
+                                    <i class="reader-additionally__icon fa fa-trash"></i>
+                                    Delete
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="reader-book" id="reader-book">
+           <!-- BOOK FILE -->
+        </div>
+        <div class="reader-book reader-book--visibility" id="reader-book-processing">
+            <!-- PAGE CONTENT CALCULATION -->
+        </div>
+
+        <button class="reader-page__back-btn" id="back">
+            <i class="reader-page__back-icon fa fa-chevron-left fa-2x" ></i>
+        </button>
+        <button class="reader-page__next-btn" id="next">
+            <i class="reader-page__next-icon fa fa-chevron-right fa-2x"></i>
+        </button>
+
+        <div class="reader-footer">
+
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/js/local-storage-keys.js"></script>
+<script src="assets/json/allBooks.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/script-reader-page.js"></script>
+<script src="assets/js/book-paginator.js"></script>
+</body>
+</html>
+

@@ -1,14 +1,27 @@
 .book {
+    &--84 {
+        width: 84px;
+        & .book__cover-img {
+            width: 84px;
+            height: 124px;
+        }
+    }
     &--120 {
         width: 120px;
+        & .book__cover-img {
+            width: 120px;
+            height: 176px;
+        }
     }
-
-    &__cover-img {
-        width: 120px;
-        height: 176px;
+    &--176 {
+        width: 176px;
+        & .book__cover-img {
+            width: 176px;
+            height: 247px;
+        }
     }
     &__description {
-        margin: 8px 0 0;
+        padding: 8px 0 0;
     }
     &__title {
         max-width: 100%;
@@ -31,7 +44,7 @@
             color: $dark-blue;
         }
     }
-    &__autor {
+    &__author {
         max-width: 100%;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -39,23 +52,35 @@
         line-height: 20px;
         margin: 0;
         max-height: 18.2px;
-        color: $yellow;
+        color: $orange;
     }
-    &__autor-link {
+    &__author-link {
         font-size: 12px;
-        font-weight: 100;
-        color: $yellow;
+        font-weight: 300;
+        color: $orange;
         &:hover {
             color: $orange;
-            text-decoration: none;
+            text-decoration: underline;
+        }
+    }
+    &__progress {
+        padding-bottom: 6px;
+    }
+
+    &--border {
+        & .book__cover-img {
+            border-radius: 6px 6px 0 0;
+        }
+        & .book__description {
+            background: $white;
+            padding: 8px 4px 8px;
+            border-radius: 0 0 6px 6px;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,.16), 0 0 0 1px rgba(0,0,0,.08);
         }
     }
     
 }
 
 
-@media (max-width: 768px) {
-    .book {
-        margin-right: 12px;
-    }
-}
+
+

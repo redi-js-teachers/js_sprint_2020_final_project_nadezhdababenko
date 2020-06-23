@@ -1,0 +1,1 @@
+let popularNowIDs = [11, 3, 2, 18, 14, 21, 0];

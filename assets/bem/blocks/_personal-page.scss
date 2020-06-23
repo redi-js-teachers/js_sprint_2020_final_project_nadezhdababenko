@@ -1,0 +1,101 @@
+.personal-page {
+    padding: 0;
+    &__recent-books-title {
+        color: $dark-blue;
+        text-align: center;
+        padding-bottom: 18px;
+        font-size: 24px;
+        font-weight: 100;
+    }
+    &__recent-books {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    &__recent-book {
+        margin-right: 12px;
+    }
+    &__recent-book:last-child {
+        margin-right: 0;
+    }
+    &__activities {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        & .personal-activity:first-child {
+            margin-right: 12px;
+        }
+    }
+    & .nav-pills .nav-link.active {
+        background-color: transparent!important;
+        color: $blue-green!important;
+        border: 2px solid $blue-green;
+      }
+    &__header {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 25px 0;
+        background-color: #ddd6cf40;
+        border-bottom: 1px solid $grey-text;
+
+    }
+    &__header-item {
+        margin-right: 26px;
+    }
+    &__header-item:last-child {
+        margin-right: 0;
+    }
+    &__content-block {
+        margin-top: -1rem;
+    }
+    &__content-wrapper {
+        background-color: $white;
+    }
+    &__content {
+        padding: 30px 0;
+    }
+    &__content-menu {
+        & .active {
+            color: $blue-green;
+        }
+    }
+    &__content-menu-item {
+        display: flex;
+        align-items: center;
+        color: $dark-blue;
+        cursor: pointer;
+        border-bottom: 1px solid $dark-blue;
+        padding: 8px;
+        font-size: 15px;
+        &:hover {
+            color: $blue-green;
+            text-decoration: none;
+        }
+
+    }
+    &__menu-icon {
+        margin-right: 20px;
+    }
+    &__content-title {
+        font-size: 24px;
+        font-weight: 600;
+        color: $blue-green;
+    }
+    &__book-list {
+        & .book-card {
+            margin-bottom: 18px;
+        }
+
+        & .book-card:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    &__book-card {
+        margin-bottom: 18px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+}

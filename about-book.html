@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Booklover</title>
+</head>
+<body>
+    <div class="header">
+        <nav class="header__navbar main-navbar navbar navbar-expand-lg">
+            <a class="main-navbar__brand navbar-brand" href="main-page-witout-login.html">
+                <img class="main-navbar__img" src="assets/images/logos/logo-md-no-bg.png" alt="">
+            </a>
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="main-navbar__collapse collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="main-navbar__nav navbar-nav">
+                    <a class="main-navbar__item nav-item nav-link" href="library.html">Library <span class="sr-only">(current)</span></a>
+                    <a class="main-navbar__item nav-item nav-link" href="search-page.html">Search</a>
+                    <a class="main-navbar__item nav-item nav-link" href="#" id="log-in-btn">Log in</a>
+                    <a class="main-navbar__item nav-item nav-link" href="personal-page.html" id="log-in-btn">My books</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="spacer spacer--48"></div>
+
+    <div class="about-book container">
+        <!-- DESCRIPTION ROW -->
+        <div class="about-book__content-block row">
+            <!-- LEFT PART OF DESCRIPTION -->
+            <div class="about-book__book-cover col-md-3" id="about-book-cover">
+                <!-- THIS BOOK COVER -->
+            </div>
+            <!-- RIGHT PART OF DESCRIPTION -->
+            <div class="about-book__content col-md-9" id="about-book-description">
+                <!-- THIS BOOK -> DESCRIPTION OF THE BOOK WITH ACTIONS -->
+            </div>
+        </div>
+        <div class="spacer spacer--48"></div>
+    </div>
+    <!-- RELATED BOOKS ROW -->
+    <div class="related-books container">
+        <div class="list list--center">
+            <div class="list__header list-header">
+                <a class="list-header__link" href="#">
+                    <div class="list-header__text">
+                        Related books
+                    </div>  
+                    <div class="list-header__btn">
+                        Show all
+                    </div>
+                </a>
+            </div>
+            <div class="list__body" id="related-books">
+                <!-- Related books row -->
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer spacer--36"></div>
+
+    <div class="about-book-reviews container-fluid">
+        <div class="personal-page-item about-book-reviews__item">
+            <div class="personal-page-item__amount">
+                0
+            </div>
+            <div class="personal-page-item__title">
+                Readers
+            </div>
+        </div>
+        <div class="personal-page-item about-book-reviews__item">
+            <div class="personal-page-item__amount">
+                0
+            </div>
+            <div class="personal-page-item__title">
+                Book lists
+            </div>
+        </div>
+        <div class="personal-page-item about-book-reviews__item">
+            <div class="personal-page-item__amount">
+                0
+            </div>
+            <div class="personal-page-item__title">
+                Reviews
+            </div>
+        </div>
+        <div class="personal-page-item about-book-reviews__item">
+            <div class="personal-page-item__amount">
+                0
+            </div>
+            <div class="personal-page-item__title">
+                Quotes
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer container-fluid">
+        <div class="footer__content container">
+            <div class="footer__row row">
+                <div class="footer__social col-lg-4 col-sm-12">
+                    <a href="#" class="footer__social-icon social-network">
+                        <i class="social-network__icon fa fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="#" class="footer__social-icon social-network">
+                        <i class="social-network__icon fa fa-facebook-f fa-2x"></i>
+                    </a>
+                    <a href="#" class="footer__social-icon social-network">
+                        <i class="social-network__icon fa fa-vk fa-2x"></i>
+                    </a>
+                    <a href="#" class="footer__social-icon social-network">
+                        <i class="social-network__icon fa fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+                <div class="footer__stores col-lg-4 col-sm-12">
+                    <div class="social-btn social-btn--light">
+                        <a class="social-btn__link" href="#">
+                            <i class="social-btn__icon fa fa-apple fa-lg"></i>
+                            <div class="social-btn__text-block">
+                                <div class="social-btn__text">Get it on</div>
+                                <div class="social-btn__store">App Store</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social-btn social-btn--light">
+                        <a class="social-btn__link" href="#">
+                            <i class="social-btn__icon fa fa-google fa-lg"></i>
+                            <div class="social-btn__text-block">
+                                <div class="social-btn__text">Get it on</div>
+                                <div class="social-btn__store">Google Play</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__copyright col-lg-4 col-sm-12">
+                    © 2020, BookLover
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="assets/json/allBooks.js"></script> 
+<script src="assets/json/authors.js"></script> 
+<script src="assets/json/bestsellers.js"></script> 
+<script src="assets/js/local-storage-keys.js"></script>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/book-actions.js"></script>
+<script src="assets/js/about-book.js"></script>
+</body>
+</html>

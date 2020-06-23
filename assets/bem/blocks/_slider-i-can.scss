@@ -1,0 +1,58 @@
+.slider-i-can {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__wrapper {
+        font-size: 40px;
+        color:$grey-text;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    &__slider{
+        height: 50px;
+        padding-left:15px;
+        overflow: hidden;
+      }
+    &__slider div {
+        color:#fff;
+        height: 50px;
+        margin-bottom: 50px;
+        padding: 2px 15px;
+        text-align: center;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+      }
+      &__text1{
+        background: $blue-green;
+        animation: slide 5s linear infinite;
+        text-align: center;
+      }
+
+      &__text2 {
+        background: $orange;
+        text-align: center;
+
+      }
+      &__text3 {
+        background: $dark-blue;
+        text-align: center;
+      }
+}
+@keyframes slide {
+    0% {margin-top:-300px;}
+    5% {margin-top:-200px;}
+    33% {margin-top:-200px;}
+    38% {margin-top:-100px;}
+    66% {margin-top:-100px;}
+    71% {margin-top:0px;}
+    100% {margin-top:0px;}
+  }
+
+
+  
